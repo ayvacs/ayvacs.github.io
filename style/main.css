@@ -4,7 +4,7 @@
 
 body{
   background: black;
-  background-image: url("header.png");
+  background-image: url("style/header.png");
 
   /* Disable scrolling */
   overflow: hidden;
