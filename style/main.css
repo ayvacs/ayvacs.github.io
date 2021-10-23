@@ -28,6 +28,15 @@
   align-items: flex-end;
 }
 
+.scrollable{
+  overflow-y: auto;
+}
+
+a{
+  color:#a6b3ff;
+  text-decoration: none;
+}
+
 hr{
   width:80%;
   height:2px;
