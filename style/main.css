@@ -2,9 +2,49 @@
   height: 100vh;  /* Max height */
 }
 
+.panel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  padding: 10px;
+  background: #0c0c0c;
+  border-radius: 8px;
+  width: 80vh;
+  height: 80vh;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.text{
+  text-align: center;
+  color: #ffffff;
+}
+
+.sociallinks{
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+hr{
+  width:80%;
+  height:2px;
+  border-width:0;
+  color:#161616;
+  background-color:#161616;
+}
+
+p{
+  font-size: 20px;
+}
+
 body{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: black;
-  background-image: url("style/header.png");
+
+  background-image: url("/style/ominous.png");
 
   /* Disable scrolling */
   overflow: hidden;
