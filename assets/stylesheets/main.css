@@ -1,5 +1,5 @@
 #particles-js{
-  height: 100vh;  /* Max height */
+  height: 100vh;
 }
 
 .panel{
@@ -61,7 +61,7 @@ p{
 }
 
 body{
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Rubik', sans-serif;
   background: black;
 
   background-image: url("/assets/images/ominous.png");
