@@ -3,19 +3,42 @@
 }*/
 
 .panel{
-  padding: 10px;
+  padding: 5px;
   background: #0c0c0c;
   border-radius: 8px;
   width: 80vh;
-  height: 80vh;
+  height: 70vh;
 
   box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.4);
 
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+}
+
+.toast{
+  padding: 5px;
+  background: #0c0c0c;
+  border-radius: 8px;
+  width: 80vh;
+  height: 5vh;
+  line-height: 5vh;
+  text-align: center;
+
+  box-shadow: 0 0 12px 12px rgba(0, 0, 0, 0.4);
+
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.toast-text{
+  margin: auto;
+  color: #ffffff;
 }
 
 .text{
