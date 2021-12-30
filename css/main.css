@@ -1,6 +1,15 @@
+#back-button {
+  position: fixed;
+  text-decoration: none;
+  font-size: 35px;
+  top: 10px;
+  left: 15px;
+}
+
 body, html {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 }
+
 h1 {
   text-align: center;
 }
