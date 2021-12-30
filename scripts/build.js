@@ -1,4 +1,4 @@
-$.getJSON("data/entries.json", function (data) {
+$.get("data/entries.json", function (data) {
   //console.log(data);
 
 
@@ -15,11 +15,13 @@ $.getJSON("data/entries.json", function (data) {
     <a href="https://github.com/frogweezer/gba.js.org">GitHub source code</a>
   </div>
   */
-  var dataLength = data.length
+  var dataLength = data.length;
+  var n = 0; //Counter variable
   for (var i = 0; i < dataLength; i++) {
+    n++;
     var dataPoint = data[i];
-    console.log(dataPoint);
 
+    console.log("Built element " + n + "/" + dataLength);
     $("body").append(`
       <div class="row-entry">
         <div class="row">
@@ -27,8 +29,22 @@ $.getJSON("data/entries.json", function (data) {
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
 
-        <p>` + dataPoint.description + `</p>
+        <p class="entry-description">` + dataPoint.description + `</p>
       </div>
     `);
+
+    var rowEntry = document.getElementsByClassName("row-entry")[i];
+
+    var linkCount = Object.keys(dataPoint.links).length;
+    for (var key in dataPoint.links) {
+      var linkName = key;
+      var link = dataPoint.links[linkName];
+
+      var a = document.createElement("a");
+      a.innerHTML = linkName;
+      a.href = link;
+
+      rowEntry.append(a);
+    }
   }
 });
