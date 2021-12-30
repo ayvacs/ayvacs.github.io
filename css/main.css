@@ -32,8 +32,8 @@ a {
 }
 
 a::after {
-    content: "\a";
-    white-space: pre;
+  content: "\a";
+  white-space: pre;
 }
 
 .row-entry {
@@ -59,6 +59,10 @@ a::after {
 
 .text-right {
   text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .bullet-point {
