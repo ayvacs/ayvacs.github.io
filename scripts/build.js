@@ -26,6 +26,8 @@ $.getJSON("data/entries.json", function (data) {
           <h3 class="column bullet-point">` + dataPoint.name + `</h3>
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
+
+        <p>` + dataPoint.description + `</p>
       </div>
     `);
   }
