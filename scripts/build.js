@@ -16,7 +16,7 @@ $.get("data/entries.json", function (data) {
   </div>
   */
   var dataLength = data.length;
-  var n = 0; //Counter variable
+  var n = 0; // Counter variable
   for (var i = 0; i < dataLength; i++) {
     n++;
     var dataPoint = data[i];
@@ -29,12 +29,31 @@ $.get("data/entries.json", function (data) {
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
 
+        <div class="entry-languages">
+          <b>Languages:</b>
+        </div>
         <p class="entry-description">` + dataPoint.description + `</p>
       </div>
     `);
 
     var rowEntry = document.getElementsByClassName("row-entry")[i];
 
+    // Add languages
+    var langCount = Object.keys(dataPoint.languages).length;
+    var langN = 0; // Counter variable
+    for (var l = 0; l < langCount; l++) {
+      langN++;
+      var lang = dataPoint.languages[l];
+      var div = document.getElementsByClassName("entry-languages")[i];
+
+      if (langN == langCount) {
+        div.innerHTML += lang;
+      } else {
+        div.innerHTML += lang + ", ";
+      }
+    }
+
+    // Add links
     var linkCount = Object.keys(dataPoint.links).length;
     for (var key in dataPoint.links) {
       var linkName = key;

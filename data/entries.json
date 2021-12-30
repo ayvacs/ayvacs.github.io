@@ -2,7 +2,8 @@
   {
     "name": "gba.js.org",
     "date": "October 2021 - December 2021",
-    "description": "A light-weight emulator for the GameBoy Advance",
+    "languages": ["JavaScript", "HTML"],
+    "description": "A light-weight online emulator for the GameBoy Advance",
     "links": {
       "Web link": "https://gba.js.org",
       "GitHub source code": "https://github.com/frogweezer/gba.js.org"
@@ -12,6 +13,7 @@
   {
     "name": "Deepsquid",
     "date": "December 2021 - present",
+    "languages": ["Lua", "Luau"],
     "description": "Deepsquid, the smartest script hub",
     "links": {
       "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
