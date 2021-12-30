@@ -20,6 +20,13 @@ $.getJSON("data/entries.json", function (data) {
     var dataPoint = data[i];
     console.log(dataPoint);
 
-    $("body").append("<div class=\"row-entry\"><div class=\"row\"><h3 class=\"column bullet-point\">" + dataPoint.name + "</h3></div></div>");
+    $("body").append(`
+      <div class="row-entry">
+        <div class="row">
+          <h3 class="column bullet-point">` + dataPoint.name + `</h3>
+          <p class="column text-right">` + dataPoint.date + `</p>
+        </div>
+      </div>
+    `);
   }
 });
