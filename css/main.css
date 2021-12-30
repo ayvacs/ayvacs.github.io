@@ -13,3 +13,47 @@ body, html {
 h1 {
   text-align: center;
 }
+
+hr {
+  width: 20%;
+}
+
+a {
+  color: blue;
+}
+
+a::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.row-entry {
+  margin: auto;
+  width: 50%;
+}
+
+.row-entry::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.bullet-point {
+  display: list-item;          /* This has to be "list-item"                                               */
+  list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+  list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
+}
