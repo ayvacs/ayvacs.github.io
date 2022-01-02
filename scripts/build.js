@@ -29,7 +29,7 @@ $.get("data/entries.json", function (data) {
     }
 
     console.log("Built element " + n + "/" + dataLength);
-    $("body").append(`
+    $("#automagic-elements").append(`
       <div class="row-entry">
         <div class="row">
           <h3 class="column bullet-point">` + dataPrefix + dataPoint.name + `</h3>
