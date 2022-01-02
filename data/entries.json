@@ -19,6 +19,17 @@
   },
 
   {
+    "name": "dex",
+    "date": "October 2021 - January 2022",
+    "languages": ["JavaScript", "HTML"],
+    "description": "An online global Pokédex",
+    "links": {
+      "Web link": "https://frogweezer.github.io/dex",
+      "GitHub source code": "https://github.com/frogweezer/dex"
+    }
+  },
+
+  {
     "name": "Deepsquid",
     "date": "December 2021 - present",
     "languages": ["Lua", "Luau"],
