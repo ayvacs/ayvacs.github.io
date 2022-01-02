@@ -31,3 +31,7 @@ td {
 .columnRight {
   text-align: left
 }
+
+a, a:visited {
+ color: blue;
+}
