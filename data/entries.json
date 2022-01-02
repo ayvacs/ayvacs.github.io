@@ -41,5 +41,17 @@
       "Web link": "https://frogweezer.github.io/dex",
       "GitHub source code": "https://github.com/frogweezer/dex"
     }
+  },
+
+  {
+    "name": "simple-pip",
+    "date": "March 2021 - December 2021",
+    "starred": "true",
+    "languages": ["JavaScript"],
+    "description": "A simple Chrome extension to pop out videos.",
+    "links": {
+      "Web link": "https://simple-pip.js.org",
+      "GitHub source code": "https://github.com/frogweezer/simple-pip"
+    }
   }
 ]
