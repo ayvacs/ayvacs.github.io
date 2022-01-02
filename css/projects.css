@@ -29,6 +29,7 @@ hr {
 
 a {
   color: blue;
+  text-decoration: none;
 }
 
 a::after {
