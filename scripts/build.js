@@ -1,25 +1,11 @@
 $.get("data/entries.json", function (data) {
-  //console.log(data);
-
-
-  /*
-  <div class="row-entry">
-    <div class="row">
-      <h3 class="column bullet-point">gba.js.org</h3>
-      <p class="column text-right">October 2021 - December 2021</p>
-    </div>
-
-    <p>A light-weight online emulator for the GameBoy Advance</p>
-
-    <a href="https://gba.js.org">Web link</a>
-    <a href="https://github.com/frogweezer/gba.js.org">GitHub source code</a>
-  </div>
-  */
-  var dataLength = data.length;
+  // Initialize Projects
+  var projects = data.projects;
+  var dataLength = projects.length;
   var n = 0; // Counter variable
   for (var i = 0; i < dataLength; i++) {
     n++;
-    var dataPoint = data[i];
+    var dataPoint = projects[i];
 
     
     if (dataPoint.starred == "true") {

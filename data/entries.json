@@ -1,57 +1,61 @@
-[
-  {
-    "name": "Deepsquid",
-    "date": "December 2021 - present",
-    "starred": "false",
-    "languages": ["Lua", "Luau"],
-    "description": "Deepsquid, the smartest script hub. Currently in client-side development.",
-    "links": {
-      "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
-    }
-  },
+{
+  "projects": [
+    {
+      "name": "Deepsquid",
+      "date": "December 2021 - present",
+      "starred": "false",
+      "languages": ["Lua", "Luau"],
+      "description": "Deepsquid, the smartest script hub. Currently in client-side development.",
+      "links": {
+        "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
+      }
+    },
 
-  {
-    "name": "dealing with my creative roadblock😍",
-    "date": "December 2021 - present",
-    "starred": "false",
-    "languages": [],
-    "description": "yaaaay",
-    "links": {}
-  },
+    {
+      "name": "dealing with my creative roadblock😍",
+      "date": "December 2021 - present",
+      "starred": "false",
+      "languages": [],
+      "description": "yaaaay",
+      "links": {}
+    },
 
-  {
-    "name": "gba.js.org",
-    "date": "October 2021 - December 2021",
-    "starred": "true",
-    "languages": ["JavaScript", "HTML"],
-    "description": "GBA Online is a light-weight online emulator for the GameBoy Advance. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org</a> but can be hosted offline as well.",
-    "links": {
-      "Web link": "https://gba.js.org",
-      "GitHub source code": "https://github.com/frogweezer/gba.js.org"
-    }
-  },
+    {
+      "name": "gba.js.org",
+      "date": "October 2021 - December 2021",
+      "starred": "true",
+      "languages": ["JavaScript", "HTML"],
+      "description": "GBA Online is a light-weight online emulator for the GameBoy Advance. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org</a> but can be hosted offline as well.",
+      "links": {
+        "Web link": "https://gba.js.org",
+        "GitHub source code": "https://github.com/frogweezer/gba.js.org"
+      }
+    },
 
-  {
-    "name": "dex",
-    "date": "October 2021 - December 2021",
-    "starred": "false",
-    "languages": ["JavaScript", "HTML"],
-    "description": "An online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
-    "links": {
-      "Web link": "https://frogweezer.github.io/dex",
-      "GitHub source code": "https://github.com/frogweezer/dex"
-    }
-  },
+    {
+      "name": "dex",
+      "date": "October 2021 - December 2021",
+      "starred": "false",
+      "languages": ["JavaScript", "HTML"],
+      "description": "An online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
+      "links": {
+        "Web link": "https://frogweezer.github.io/dex",
+        "GitHub source code": "https://github.com/frogweezer/dex"
+      }
+    },
 
-  {
-    "name": "simple-pip",
-    "date": "March 2021 - December 2021",
-    "starred": "true",
-    "languages": ["JavaScript"],
-    "description": "A simple Chrome extension to pop out videos.",
-    "links": {
-      "Web link": "https://simple-pip.js.org",
-      "GitHub source code": "https://github.com/frogweezer/simple-pip"
+    {
+      "name": "simple-pip",
+      "date": "March 2021 - December 2021",
+      "starred": "true",
+      "languages": ["JavaScript"],
+      "description": "A simple Chrome extension to pop out videos.",
+      "links": {
+        "Web link": "https://simple-pip.js.org",
+        "GitHub source code": "https://github.com/frogweezer/simple-pip"
+      }
     }
-  }
-]
+  ],
+
+  "competitions": []
+}
