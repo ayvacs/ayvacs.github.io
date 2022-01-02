@@ -28,8 +28,6 @@ $.get("data/entries.json", function (data) {
       var dataPrefix = "";
     }
 
-    console.log(dataPrefix)
-
     console.log("Built element " + n + "/" + dataLength);
     $("body").append(`
       <div class="row-entry">
