@@ -1,0 +1,33 @@
+body, html {
+  background-color: #b8b8b8;
+}
+
+td {
+  padding: 10px
+}
+
+.button {
+  padding: 10px;
+}
+
+.row {
+  display: table;
+  height: 22.22px;
+  overflow: hidden;
+}
+
+/* Create two equal columns that sits next to each other */
+.columnLeft, .columnRight {
+  padding: 10px;
+  display: table-cell;
+  vertical-align:
+  middle;
+}
+
+.columnLeft {
+  text-align: right;
+}
+
+.columnRight {
+  text-align: left
+}
