@@ -1,7 +1,19 @@
 [
   {
+    "name": "Deepsquid",
+    "date": "December 2021 - present",
+    "starred": "false",
+    "languages": ["Lua", "Luau"],
+    "description": "Deepsquid, the smartest script hub",
+    "links": {
+      "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
+    }
+  },
+
+  {
     "name": "dealing with my creative roadblock😍😍😍",
     "date": "December 2021 - present",
+    "starred": "false",
     "languages": [],
     "description": "yaaaay",
     "links": {}
@@ -10,6 +22,7 @@
   {
     "name": "gba.js.org",
     "date": "October 2021 - December 2021",
+    "starred": "true",
     "languages": ["JavaScript", "HTML"],
     "description": "A light-weight online emulator for the GameBoy Advance",
     "links": {
@@ -20,22 +33,13 @@
 
   {
     "name": "dex",
-    "date": "October 2021 - January 2022",
+    "date": "October 2021 - December 2021",
+    "starred": "false",
     "languages": ["JavaScript", "HTML"],
     "description": "An online global Pokédex",
     "links": {
       "Web link": "https://frogweezer.github.io/dex",
       "GitHub source code": "https://github.com/frogweezer/dex"
-    }
-  },
-
-  {
-    "name": "Deepsquid",
-    "date": "December 2021 - present",
-    "languages": ["Lua", "Luau"],
-    "description": "Deepsquid, the smartest script hub",
-    "links": {
-      "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
     }
   }
 ]

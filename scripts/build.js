@@ -21,11 +21,20 @@ $.get("data/entries.json", function (data) {
     n++;
     var dataPoint = data[i];
 
+    
+    if (dataPoint.starred == "true") {
+      var dataPrefix = "⭐ ";
+    } else {
+      var dataPrefix = "";
+    }
+
+    console.log(dataPrefix)
+
     console.log("Built element " + n + "/" + dataLength);
     $("body").append(`
       <div class="row-entry">
         <div class="row">
-          <h3 class="column bullet-point">` + dataPoint.name + `</h3>
+          <h3 class="column bullet-point">` + dataPrefix + dataPoint.name + `</h3>
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
 
@@ -40,7 +49,7 @@ $.get("data/entries.json", function (data) {
     var langCount = Object.keys(dataPoint.languages).length;
     if (langCount !== 0) {
       var div = document.getElementsByClassName("entry-languages")[i];
-      div.innerHTML += "<b>Languages:</b> "
+      div.innerHTML += "<b>Languages:</b> ";
       var langN = 0; // Counter variable
       for (var l = 0; l < langCount; l++) {
         langN++;
