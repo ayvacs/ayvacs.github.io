@@ -29,9 +29,7 @@ $.get("data/entries.json", function (data) {
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
 
-        <div class="entry-languages">
-          <b>Languages:</b>
-        </div>
+        <div class="entry-languages"></div>
         <p class="entry-description">` + dataPoint.description + `</p>
       </div>
     `);
@@ -40,16 +38,20 @@ $.get("data/entries.json", function (data) {
 
     // Add languages
     var langCount = Object.keys(dataPoint.languages).length;
-    var langN = 0; // Counter variable
-    for (var l = 0; l < langCount; l++) {
-      langN++;
-      var lang = dataPoint.languages[l];
+    if (langCount !== 0) {
       var div = document.getElementsByClassName("entry-languages")[i];
+      div.innerHTML += "<b>Languages:</b> "
+      var langN = 0; // Counter variable
+      for (var l = 0; l < langCount; l++) {
+        langN++;
+        var lang = dataPoint.languages[l];
+        var div = document.getElementsByClassName("entry-languages")[i];
 
-      if (langN == langCount) {
-        div.innerHTML += lang;
-      } else {
-        div.innerHTML += lang + ", ";
+        if (langN == langCount) {
+          div.innerHTML += lang;
+        } else {
+          div.innerHTML += lang + ", ";
+        }
       }
     }
 
