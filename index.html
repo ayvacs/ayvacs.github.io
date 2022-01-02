@@ -11,6 +11,10 @@
   <link rel="icon" href="assets/favicon.png" type="image/png">
 
   <style>
+    body, html {
+      background-color: #b8b8b8;
+    }
+
     td {
       padding: 10px
     }
@@ -18,9 +22,33 @@
     .button {
       padding: 10px;
     }
+
+    .row {
+      display: table;
+      height: 22.22px;
+      overflow: hidden;
+    }
+
+    /* Create two equal columns that sits next to each other */
+    .columnLeft, .columnRight {
+      padding: 10px;
+      display: table-cell;
+      vertical-align:
+      middle;
+    }
+
+    .columnLeft {
+      text-align: right;
+    }
+
+    .columnRight {
+      text-align: left
+    }
   </style>
 </head>
 <body>
+  <h1 align="center">Welcome to my World Wide Web (WWW) Server!</h1>
+
   <table align="center">
     <tr>
       <td>
@@ -50,6 +78,15 @@
   <div align="center">
     <p><b>Last updated:</b> September 24, 1995</p>
     <p>Copyright 1995, <a href="www.aol.com">America Online, Inc.</a></p>
+
+    <div class="row">
+      <div class="columnLeft">
+        <h3>This page best viewed in</h3>
+      </div>
+      <div class="columnRight">
+        <img src="assets/ie-advert.gif">
+      </div>
+    </div>
   </div>
 
   <!--
