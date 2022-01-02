@@ -23,7 +23,7 @@ $.get("data/entries.json", function (data) {
 
     
     if (dataPoint.starred == "true") {
-      var dataPrefix = "⭐ ";
+      var dataPrefix = "⭐&nbsp;&nbsp;";
     } else {
       var dataPrefix = "";
     }
