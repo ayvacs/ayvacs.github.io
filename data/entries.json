@@ -1,6 +1,18 @@
 {
   "projects": [
     {
+      "name": "Brigadier",
+      "date": "January 2022 - present",
+      "starred": "false",
+      "languages": ["JavaScript", "Lua", "Luau"],
+      "description": "Brigadier is an extension which encrypts Roblox messages and decrypts them using private keys to bypass the Roblox filter.",
+      "links": {
+        "Preview image": "https://i.imgur.com/onhXJoA.png",
+        "[Closed-source]": "#"
+      }
+    },
+
+    {
       "name": "Deepsquid",
       "date": "December 2021 - present",
       "starred": "false",
