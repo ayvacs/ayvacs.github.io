@@ -71,3 +71,11 @@ a::after {
   list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
   list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
 }
+
+td {
+  padding: 10px
+}
+
+.button {
+  padding: 10px;
+}
