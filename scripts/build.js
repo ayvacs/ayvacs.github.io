@@ -7,8 +7,8 @@ $.get("data/entries.json", function (data) {
     n++;
     var dataPoint = projects[i];
 
-    
-    if (dataPoint.starred == "true") {
+
+    if (dataPoint.isStarred == "true") {
       var dataPrefix = "⭐&nbsp;&nbsp;";
     } else {
       var dataPrefix = "";
@@ -18,7 +18,7 @@ $.get("data/entries.json", function (data) {
     $("#automagic-elements").append(`
       <div class="row-entry">
         <div class="row">
-          <h3 class="column bullet-point">` + dataPrefix + dataPoint.name + `</h3>
+          <h3 class="column bullet-point dataName">` + dataPrefix + dataPoint.name + `</h3>
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
 
@@ -28,6 +28,19 @@ $.get("data/entries.json", function (data) {
     `);
 
     var rowEntry = document.getElementsByClassName("row-entry")[i];
+
+    // Add icon image
+    if (dataPoint.icon) {
+        var h3 = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
+        console.log(h3);
+
+        h3.innerHTML = `
+        
+        <img style=\"position:absolute; margin-top:1px;\" src="` + dataPoint.icon + `" height=17>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        ` + h3.innerHTML;
+    };
 
     // Add languages
     var langCount = Object.keys(dataPoint.languages).length;
