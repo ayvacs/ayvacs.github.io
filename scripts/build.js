@@ -57,6 +57,7 @@ $.get("data/entries.json", function (data) {
       var a = document.createElement("a");
       a.innerHTML = linkName;
       a.href = link;
+      a.target = "_blank"
 
       rowEntry.append(a);
     };
