@@ -60,5 +60,10 @@ $.get("data/entries.json", function (data) {
 
       rowEntry.append(a);
     }
+    var isOpenSourced = dataPoint.isOpenSource;
+    if (isOpenSourced == "true") {
+      var div = document.getElementsByClassName("entry-languages")[i];
+      div.innerHTML += "<br><b>Open-Sourced</b>"
+    }
   }
 });
