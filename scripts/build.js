@@ -7,18 +7,11 @@ $.get("data/entries.json", function (data) {
     n++;
     var dataPoint = projects[i];
 
-
-    if (dataPoint.isStarred == "true") {
-      var dataPrefix = "⭐&nbsp;&nbsp;";
-    } else {
-      var dataPrefix = "";
-    }
-
     console.log("Built element " + n + "/" + dataLength);
     $("#automagic-elements").append(`
       <div class="row-entry">
         <div class="row">
-          <h3 class="column bullet-point dataName">` + dataPrefix + dataPoint.name + `</h3>
+          <h3 class="column bullet-point dataName">` + dataPoint.name + `</h3>
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
 
@@ -28,21 +21,28 @@ $.get("data/entries.json", function (data) {
     `);
 
     var rowEntry = document.getElementsByClassName("row-entry")[i];
+    var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
 
     // Add icon image
+    
     if (dataPoint.icon) {
-        var h3 = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
-        console.log(h3);
-
-        h3.innerHTML = `
-        
-        <img style=\"position:absolute; margin-top:1px;\" src="` + dataPoint.icon + `" height=17>
+        title.innerHTML = `
+        <img style=\"position:absolute; margin-top:2px;\" src="` + dataPoint.icon + `" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ` + title.innerHTML;
+    };
 
-        ` + h3.innerHTML;
+    // Add star icon
+
+    if (dataPoint.isStarred) {
+        title.innerHTML = `
+        <img style=\"position:absolute; margin-top:2px;\" src="assets/star.png" height=18.72>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ` + title.innerHTML;
     };
 
     // Add languages
+
     var langCount = Object.keys(dataPoint.languages).length;
     if (langCount !== 0) {
       var div = document.getElementsByClassName("entry-metadata")[i];
@@ -62,6 +62,7 @@ $.get("data/entries.json", function (data) {
     }
 
     // Add links
+
     var linkCount = Object.keys(dataPoint.links).length;
     for (var key in dataPoint.links) {
       var linkName = key;
@@ -74,6 +75,8 @@ $.get("data/entries.json", function (data) {
 
       rowEntry.append(a);
     };
+
+    // Add metadata
 
     var div = document.getElementsByClassName("entry-metadata")[i];
     var isOpenSourced = dataPoint.isOpenSource;

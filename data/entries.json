@@ -3,7 +3,7 @@
     {
       "name": "Brigadier",
       "date": "January 2022 - present",
-      "isStarred": "false",
+      "isStarred": "true",
       "isOpenSource": "false",
       "languages": ["JavaScript", "Lua", "Luau"],
       "icon": "assets/brigadier/icon.png",
