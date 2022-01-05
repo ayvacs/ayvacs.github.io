@@ -41,6 +41,7 @@
       "isStarred": "true",
       "isOpenSource": "true",
       "languages": ["JavaScript", "HTML"],
+      "icon": "https://gba.js.org/assets/images/macos-11x/Icon-MacOS-512x512@2x.png",
       "description": "GBA Online is a light-weight online emulator for the GameBoy Advance. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org</a> but can be hosted offline as well.",
       "links": {
         "Web link": "https://gba.js.org",
@@ -67,6 +68,7 @@
       "isStarred": "true",
       "isOpenSource": "true",
       "languages": ["JavaScript"],
+      "icon": "https://raw.githubusercontent.com/frogweezer/simple-pip/main/src/assets/icon128black.png",
       "description": "A simple Chrome extension to pop out videos.",
       "links": {
         "Web link": "https://simple-pip.js.org",
