@@ -59,11 +59,20 @@ $.get("data/entries.json", function (data) {
       a.href = link;
 
       rowEntry.append(a);
-    }
+    };
+
+    var div = document.getElementsByClassName("entry-metadata")[i];
     var isOpenSourced = dataPoint.isOpenSource;
     if (isOpenSourced == "true") {
-      var div = document.getElementsByClassName("entry-metadata")[i];
-      div.innerHTML += "<br><b>Open-Sourced</b>"
-    }
+      div.innerHTML += `
+      <br>
+      &nbsp;
+      <img style=\"position:absolute; margin-top:1px;\" src=\"assets/github.png\" height=17>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <b>Open-sourced</b>
+      `;
+    } else if (isOpenSourced == "false") {
+      div.innerHTML += "<br><b>Closed-sourced</b>";
+    };
   }
 });

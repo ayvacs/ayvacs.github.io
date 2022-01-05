@@ -8,8 +8,7 @@
       "languages": ["JavaScript", "Lua", "Luau"],
       "description": "Brigadier is an extension which encrypts Roblox messages and decrypts them using private keys to bypass the Roblox filter.",
       "links": {
-        "Preview image": "https://i.imgur.com/onhXJoA.png",
-        "[Closed-source]": "#"
+        "Preview image": "https://i.imgur.com/onhXJoA.png"
       }
     },
 
