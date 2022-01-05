@@ -22,7 +22,7 @@ $.get("data/entries.json", function (data) {
           <p class="column text-right">` + dataPoint.date + `</p>
         </div>
 
-        <div class="entry-languages"></div>
+        <div class="entry-metadata"></div>
         <p class="entry-description">` + dataPoint.description + `</p>
       </div>
     `);
@@ -32,13 +32,13 @@ $.get("data/entries.json", function (data) {
     // Add languages
     var langCount = Object.keys(dataPoint.languages).length;
     if (langCount !== 0) {
-      var div = document.getElementsByClassName("entry-languages")[i];
+      var div = document.getElementsByClassName("entry-metadata")[i];
       div.innerHTML += "<b>Languages:</b> ";
       var langN = 0; // Counter variable
       for (var l = 0; l < langCount; l++) {
         langN++;
         var lang = dataPoint.languages[l];
-        var div = document.getElementsByClassName("entry-languages")[i];
+        var div = document.getElementsByClassName("entry-metadata")[i];
 
         if (langN == langCount) {
           div.innerHTML += lang;
@@ -62,7 +62,7 @@ $.get("data/entries.json", function (data) {
     }
     var isOpenSourced = dataPoint.isOpenSource;
     if (isOpenSourced == "true") {
-      var div = document.getElementsByClassName("entry-languages")[i];
+      var div = document.getElementsByClassName("entry-metadata")[i];
       div.innerHTML += "<br><b>Open-Sourced</b>"
     }
   }
