@@ -82,12 +82,12 @@ $.get("data/entries.json", function (data) {
         var isOpenSourced = dataPoint.isOpenSource;
         if (isOpenSourced == "true") {
             div.innerHTML += `
-      <br>
-      &nbsp;
-      <img style="position:absolute; margin-top:1px;" src="assets/github.png" height=17>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <b>Open-sourced</b>
-      `;
+            <br>
+            &nbsp;
+            <img style="position:absolute; margin-top:1px;" src="assets/github.png" height=17>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Open-sourced</b>
+            `;
         } else if (isOpenSourced == "false") {
             div.innerHTML += "<br><b>Closed-sourced</b>";
         };
