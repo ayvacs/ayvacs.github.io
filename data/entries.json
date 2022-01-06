@@ -1,81 +1,90 @@
 {
-  "projects": [
-    {
-      "name": "Brigadier",
-      "date": "January 2022 - present",
-      "isStarred": "true",
-      "isOpenSource": "false",
-      "languages": ["JavaScript", "Lua", "Luau"],
-      "icon": "assets/brigadier/icon.png",
-      "description": "Brigadier is an extension which securely encrypts and decrypts Roblox messages using private keys in order to bypass the Roblox filter. You can send blocked words, clickable links, and even images using the extension, and anyone else using the extension will be able to read your message while others will see a random list of letters and numbers.",
-      "links": {
-        "Preview image": "/assets/brigadier/demo.png"
-      }
-    },
-
-    {
-      "name": "gba.js.org",
-      "date": "October 2021 - present",
-      "isStarred": "true",
-      "isOpenSource": "true",
-      "languages": ["JavaScript", "HTML"],
-      "icon": "https://gba.js.org/assets/images/macos-11x/Icon-MacOS-512x512@2x.png",
-      "description": "GBA Online is a light-weight online emulator for the GameBoy Advance based on Iodine. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
-      "links": {
-        "Web link": "https://gba.js.org",
-        "GitHub source code": "https://github.com/frogweezer/gba.js.org"
-      }
-    },
-
-    {
-      "name": "Deepsquid",
-      "date": "December 2021 - present",
-      "isStarred": "false",
-      "isOpenSource": "false",
-      "languages": ["Lua", "Luau"],
-      "description": "Deepsquid, the smartest script hub. Currently in client-side development.",
-      "links": {
-        "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
-      }
-    },
-
-    {
-      "name": "dealing with my creative roadblock😍",
-      "date": "December 2021 - present",
-      "isStarred": "false",
-      "isOpenSource": "*doNotDisplay",
-      "languages": [],
-      "description": "yaaaay",
-      "links": {}
-    },
-
-    {
-      "name": "dex",
-      "date": "October 2021 - December 2021",
-      "isStarred": "false",
-      "isOpenSource": "true",
-      "languages": ["JavaScript", "HTML"],
-      "description": "An online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
-      "links": {
-        "Web link": "https://frogweezer.github.io/dex",
-        "GitHub source code": "https://github.com/frogweezer/dex"
-      }
-    },
-
-    {
-      "name": "simple-pip",
-      "date": "March 2021 - December 2021",
-      "isStarred": "true",
-      "isOpenSource": "true",
-      "languages": ["JavaScript"],
-      "icon": "https://raw.githubusercontent.com/frogweezer/simple-pip/main/src/assets/icon128black.png",
-      "description": "A simple Chrome extension to pop out videos.",
-      "links": {
-        "Web link": "https://simple-pip.js.org",
-        "GitHub source code": "https://github.com/frogweezer/simple-pip"
-      }
-    }
-  ],
-
-  "competitions": []
+    "projects": [
+        {
+            "name": "Brigadier",
+            "date": "January 2022 - present",
+            "isStarred": "true",
+            "isOpenSource": "false",
+            "languages": [
+                "JavaScript",
+                "Lua",
+                "Luau"
+            ],
+            "icon": "assets/brigadier/icon.png",
+            "description": "Brigadier is an extension which securely encrypts and decrypts Roblox messages using private keys in order to bypass the Roblox filter. You can send blocked words, clickable links, and even images using the extension, and anyone else using the extension will be able to read your message while others will see a random list of letters and numbers.",
+            "links": {
+                "Preview image": "/assets/brigadier/demo.png"
+            }
+        },
+        {
+            "name": "gba.js.org",
+            "date": "October 2021 - present",
+            "isStarred": "true",
+            "isOpenSource": "true",
+            "languages": [
+                "JavaScript",
+                "HTML"
+            ],
+            "icon": "https://gba.js.org/assets/images/macos-11x/Icon-MacOS-512x512@2x.png",
+            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance based on Iodine. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
+            "links": {
+                "Web link": "https://gba.js.org",
+                "GitHub source code": "https://github.com/frogweezer/gba.js.org"
+            }
+        },
+        {
+            "name": "Deepsquid",
+            "date": "December 2021 - present",
+            "isStarred": "false",
+            "isOpenSource": "false",
+            "languages": [
+                "Lua",
+                "Luau"
+            ],
+            "description": "Deepsquid, the smartest script hub. Currently in client-side development.",
+            "links": {
+                "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
+            }
+        },
+        {
+            "name": "dealing with my creative roadblock😍",
+            "date": "December 2021 - present",
+            "isStarred": "false",
+            "isOpenSource": "*doNotDisplay",
+            "languages": [],
+            "description": "yaaaay",
+            "links": {}
+        },
+        {
+            "name": "dex",
+            "date": "October 2021 - December 2021",
+            "isStarred": "false",
+            "isOpenSource": "true",
+            "languages": [
+                "JavaScript",
+                "HTML"
+            ],
+            "description": "An online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
+            "links": {
+                "Web link": "https://frogweezer.github.io/dex",
+                "GitHub source code": "https://github.com/frogweezer/dex"
+            }
+        },
+        {
+            "name": "simple-pip",
+            "date": "March 2021 - December 2021",
+            "isStarred": "true",
+            "isOpenSource": "true",
+            "languages": [
+                "JavaScript"
+            ],
+            "icon": "https://raw.githubusercontent.com/frogweezer/simple-pip/main/src/assets/icon128black.png",
+            "description": "A simple Chrome extension to pop out videos.",
+            "links": {
+                "Web link": "https://simple-pip.js.org",
+                "GitHub source code": "https://github.com/frogweezer/simple-pip"
+            }
+        }
+    ],
+    "competitions": []
 }
