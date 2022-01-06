@@ -7,9 +7,23 @@
       "isOpenSource": "false",
       "languages": ["JavaScript", "Lua", "Luau"],
       "icon": "assets/brigadier/icon.png",
-      "description": "Brigadier is an extension which encrypts Roblox messages and decrypts them using private keys to bypass the Roblox filter.",
+      "description": "Brigadier is an extension which securely encrypts and decrypts Roblox messages using private keys in order to bypass the Roblox filter. You can send blocked words, clickable links, and even images using the extension, and anyone else using the extension will be able to read your message while others will see a random list of letters and numbers.",
       "links": {
         "Preview image": "/assets/brigadier/demo.png"
+      }
+    },
+
+    {
+      "name": "gba.js.org",
+      "date": "October 2021 - present",
+      "isStarred": "true",
+      "isOpenSource": "true",
+      "languages": ["JavaScript", "HTML"],
+      "icon": "https://gba.js.org/assets/images/macos-11x/Icon-MacOS-512x512@2x.png",
+      "description": "GBA Online is a light-weight online emulator for the GameBoy Advance based on Iodine. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
+      "links": {
+        "Web link": "https://gba.js.org",
+        "GitHub source code": "https://github.com/frogweezer/gba.js.org"
       }
     },
 
@@ -33,20 +47,6 @@
       "languages": [],
       "description": "yaaaay",
       "links": {}
-    },
-
-    {
-      "name": "gba.js.org",
-      "date": "October 2021 - December 2021",
-      "isStarred": "true",
-      "isOpenSource": "true",
-      "languages": ["JavaScript", "HTML"],
-      "icon": "https://gba.js.org/assets/images/macos-11x/Icon-MacOS-512x512@2x.png",
-      "description": "GBA Online is a light-weight online emulator for the GameBoy Advance. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org</a> but can be hosted offline as well.",
-      "links": {
-        "Web link": "https://gba.js.org",
-        "GitHub source code": "https://github.com/frogweezer/gba.js.org"
-      }
     },
 
     {

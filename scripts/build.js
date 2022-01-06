@@ -24,10 +24,10 @@ $.get("data/entries.json", function (data) {
     var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
 
     // Add icon image
-    
+
     if (dataPoint.icon) {
         title.innerHTML = `
-        <img style=\"position:absolute; margin-top:2px;\" src="` + dataPoint.icon + `" height=18.72>
+        <img style="position:absolute; margin-top:2px;" src="` + dataPoint.icon + `" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         ` + title.innerHTML;
     };
@@ -36,7 +36,7 @@ $.get("data/entries.json", function (data) {
 
     if (dataPoint.isStarred) {
         title.innerHTML = `
-        <img style=\"position:absolute; margin-top:2px;\" src="assets/star.png" height=18.72>
+        <img style="position:absolute; margin-top:2px;" src="assets/star.png" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         ` + title.innerHTML;
     };
@@ -84,7 +84,7 @@ $.get("data/entries.json", function (data) {
       div.innerHTML += `
       <br>
       &nbsp;
-      <img style=\"position:absolute; margin-top:1px;\" src=\"assets/github.png\" height=17>
+      <img style="position:absolute; margin-top:1px;" src="assets/github.png" height=17>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <b>Open-sourced</b>
       `;
