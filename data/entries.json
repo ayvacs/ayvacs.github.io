@@ -16,8 +16,17 @@
                 "Preview image": "/assets/brigadier/demo.png",
                 "Contact to buy a license": "https://discord.com/users/682214024586592307"
             }
-        },
-        {
+        }, {
+            "name": "Umbra",
+            "date":"January 2022 - present",
+            "isStarred": "true",
+            "isOpenSource": "false",
+            "languages": [
+                "Lua",
+                "Luau"
+            ],
+            "description": "Umbra is Roblox's smartest modding tool."
+        }, {
             "name": "gba.js.org",
             "date": "October 2021 - present",
             "isStarred": "true",
@@ -32,8 +41,7 @@
                 "Web link": "https://gba.js.org",
                 "GitHub source code": "https://github.com/frogweezer/gba.js.org"
             }
-        },
-        {
+        }, {
             "name": "Deepsquid",
             "date": "December 2021 - present",
             "isStarred": "false",
@@ -46,8 +54,7 @@
             "links": {
                 "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
             }
-        },
-        {
+        }, {
             "name": "dealing with my creative roadblock😍",
             "date": "December 2021 - present",
             "isStarred": "false",
@@ -55,8 +62,7 @@
             "languages": [],
             "description": "yaaaay",
             "links": {}
-        },
-        {
+        }, {
             "name": "dex",
             "date": "October 2021 - December 2021",
             "isStarred": "false",
@@ -70,8 +76,7 @@
                 "Web link": "https://frogweezer.github.io/dex",
                 "GitHub source code": "https://github.com/frogweezer/dex"
             }
-        },
-        {
+        }, {
             "name": "simple-pip",
             "date": "March 2021 - December 2021",
             "isStarred": "true",
