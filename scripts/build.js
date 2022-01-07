@@ -79,6 +79,7 @@ $.get("data/entries.json", function (data) {
         // Add metadata
 
         var div = document.getElementsByClassName("entry-metadata")[i];
+
         var isOpenSourced = dataPoint.isOpenSource;
         if (isOpenSourced == "true") {
             div.innerHTML += `
@@ -91,5 +92,24 @@ $.get("data/entries.json", function (data) {
         } else if (isOpenSourced == "false") {
             div.innerHTML += "<br><b>Closed-sourced</b>";
         };
+
+        var collaboration = dataPoint.collaboration;
+        if (collaboration == "solo") {
+            div.innerHTML += `
+            <br>
+            &nbsp;
+            <img style="position:absolute; margin-top:1px;" src="assets/solo.png" height=17>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Solo project</b>
+            `;
+        } else if (collaboration == "group") {
+            div.innerHTML += `
+            <br>
+            &nbsp;
+            <img style="position:absolute; margin-top:1px;" src="assets/group.png" height=17>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Group project</b>
+            `;
+        }
     }
 });

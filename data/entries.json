@@ -5,6 +5,7 @@
             "date": "January 2022 - present",
             "isStarred": "true",
             "isOpenSource": "false",
+            "collaboration": "group",
             "languages": [
                 "JavaScript",
                 "Lua",
@@ -22,6 +23,7 @@
             "date": "October 2021 - present",
             "isStarred": "true",
             "isOpenSource": "true",
+            "collaboration": "solo",
             "languages": [
                 "JavaScript",
                 "HTML"
@@ -38,6 +40,7 @@
             "date": "December 2021 - present",
             "isStarred": "false",
             "isOpenSource": "false",
+            "collaboration": "group",
             "languages": [
                 "Lua",
                 "Luau"
@@ -52,6 +55,7 @@
             "date": "December 2021 - present",
             "isStarred": "false",
             "isOpenSource": "*doNotDisplay",
+            "collaboration": "*doNotDisplay",
             "languages": [],
             "description": "yaaaay",
             "links": {}
@@ -61,6 +65,7 @@
             "date": "October 2021 - December 2021",
             "isStarred": "false",
             "isOpenSource": "true",
+            "collaboration": "solo",
             "languages": [
                 "JavaScript",
                 "HTML"
@@ -76,6 +81,7 @@
             "date": "March 2021 - December 2021",
             "isStarred": "true",
             "isOpenSource": "true",
+            "collaboration": "solo",
             "languages": [
                 "JavaScript"
             ],
