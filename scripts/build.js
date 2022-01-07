@@ -46,20 +46,27 @@ $.get("data/entries.json", function (data) {
         var langCount = Object.keys(dataPoint.languages).length;
         if (langCount !== 0) {
             var div = document.getElementsByClassName("entry-metadata")[i];
-            div.innerHTML += "<b>Languages:</b> ";
             var langN = 0; // Counter variable
+            if (langCount >= 1) {
+                div.innerHTML = `
+                <br>
+                &nbsp;
+                <img style="position:absolute; margin-top:1px;" src="assets/globe.png" height=17>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <b>Languages:</b> 
+                `;
+            };
             for (var l = 0; l < langCount; l++) {
                 langN++;
                 var lang = dataPoint.languages[l];
-                var div = document.getElementsByClassName("entry-metadata")[i];
 
                 if (langN == langCount) {
                     div.innerHTML += lang;
                 } else {
                     div.innerHTML += lang + ", ";
-                }
-            }
-        }
+                };
+            };
+        };
 
         // Add links
 
@@ -90,7 +97,13 @@ $.get("data/entries.json", function (data) {
             <b>Open-sourced</b>
             `;
         } else if (isOpenSourced == "false") {
-            div.innerHTML += "<br><b>Closed-sourced</b>";
+            div.innerHTML += `
+            <br>
+            &nbsp;
+            <img style="position:absolute; margin-top:1px;" src="assets/x.png" height=17>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Closed-sourced</b>
+            `;
         };
 
         var collaboration = dataPoint.collaboration;
