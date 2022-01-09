@@ -1,34 +1,31 @@
 @font-face {
-  font-family: "Temp-SF Pro Display";
-  font-style: normal;
-  src: url("https://raw.githubusercontent.com/frogweezer/sf-pro/main/sf-pro/SF-Pro.ttf") format("truetype");
-  /* (C) 2015 Apple Inc. All rights reserved.*/
+    font-family: "SFProOpenType";
+    src: url("SF-Pro.ttf") format("truetype");
 }
-
 #back-button {
-  position: fixed;
-  text-decoration: none;
-  font-size: 35px;
-  top: 10px;
-  left: 15px;
+    position: fixed;
+    text-decoration: none;
+    font-size: 35px;
+    top: 10px;
+    left: 15px;
 }
 
 body, html {
-  /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; */
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; */
+    font-family: "SFProOpenType", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 h1, h2 {
-  text-align: center;
+    text-align: center;
 }
 
 hr {
-  width: 20%;
+    width: 20%;
 }
 
 a {
-  color: blue;
-  text-decoration: none;
+    color: blue;
+    text-decoration: none;
 }
 
 a:active {
@@ -36,15 +33,15 @@ a:active {
 }
 
 a::after {
-  content: "\a";
-  white-space: pre;
+    content: "\a";
+    white-space: pre;
 }
 
 .row-entry {
-  margin: auto;
+    margin: auto;
 
-  /* PC */
-  width: 50%;
+    /* PC */
+    width: 50%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -55,39 +52,39 @@ a::after {
 }
 
 .row-entry::after {
-  content: "\a";
-  white-space: pre;
+    content: "\a";
+    white-space: pre;
 }
 
 .column {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 .bullet-point {
-  display: list-item;          /* This has to be "list-item"                                               */
-  list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
-  list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
+    display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-position */
 }
 
 td {
-  padding: 10px
+    padding: 10px
 }
 
-.button {
-  padding: 10px;
+.button {  
+    padding: 10px;
 }
