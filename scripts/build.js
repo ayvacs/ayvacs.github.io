@@ -34,7 +34,7 @@ $.get("data/entries.json", function (data) {
 
         // Add star icon
 
-        if (dataPoint.isStarred) {
+        if (dataPoint.isStarred == "true") {
             title.innerHTML = `
         <img style="position:absolute; margin-top:2px;" src="assets/star.png" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

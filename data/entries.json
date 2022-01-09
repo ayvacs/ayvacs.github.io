@@ -11,7 +11,7 @@
                 "Luau"
             ],
             "icon": "assets/brigadier/icon.png",
-            "description": "Brigadier is an extension which securely encrypts and decrypts messages on the website to bypass the filter. You can send blocked words, clickable links, and even images using the extension, and anyone else using the extension will be able to read your message while others will see a random list of letters and numbers.<br><br>Brigadier is available in two forms: as an extension and as a Lua script. The extension will encrypt and decrypt messages on the Roblox website, while the script handles in-game messages. The script requires a script executor.",
+            "description": "Brigadier is an extension and in-game script for Roblox which securely encrypts and decrypts messages on the website and in-game, allowing you to bypass the filter. You can send blocked words, clickable links, and even images using the extension, and anyone else using the extension will be able to read your message while others will see a random list of letters and numbers.<br><br>Brigadier is available in two forms: as an extension and as a Lua script. The extension will encrypt and decrypt messages on the Roblox website, while the script handles in-game messages. The script requires a script executor.",
             "links": {
                 "Preview image": "/assets/brigadier/demo.png",
                 "Contact to buy a license": "https://discord.com/users/682214024586592307"
