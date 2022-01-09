@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "SF Pro Display";
+  font-family: "Temp-SF Pro Display";
   font-style: normal;
-  font-weight: 400;
   src: url("https://raw.githubusercontent.com/frogweezer/sf-pro/main/sf-pro/SF-Pro.ttf") format("truetype");
   /* (C) 2015 Apple Inc. All rights reserved.*/
 }
@@ -43,7 +42,16 @@ a::after {
 
 .row-entry {
   margin: auto;
+
+  /* PC */
   width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Phones */
+    .row-entry {
+        width: 90%;
+    }
 }
 
 .row-entry::after {
