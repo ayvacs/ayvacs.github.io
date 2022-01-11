@@ -34,7 +34,7 @@ $.get("data/entries.json", function (data) {
 
         // Add star icon
 
-        if (dataPoint.isStarred == "true") {
+        if (dataPoint.isStarred == true) {
             title.innerHTML = `
         <img style="position:absolute; margin-top:2px;" src="assets/star.png" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -80,7 +80,7 @@ $.get("data/entries.json", function (data) {
 
         var div = document.getElementsByClassName("entry-metadata")[i];
         var isOpenSourced = dataPoint.isOpenSource;
-        if (isOpenSourced == "true") {
+        if (isOpenSourced == true) {
             div.innerHTML += `
             <br>
             &nbsp;
@@ -88,7 +88,7 @@ $.get("data/entries.json", function (data) {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <b>Open-sourced</b>
             `;
-        } else if (isOpenSourced == "false") {
+        } else if (isOpenSourced == false) {
             div.innerHTML += "<br><b>Closed-sourced</b>";
         };
     }
