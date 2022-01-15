@@ -12,7 +12,8 @@
 
 body, html {
     /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu; */
-    font-family: "SFProOpenType", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    /* font-family: "SFProOpenType", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
 }
 
 h1, h2 {
