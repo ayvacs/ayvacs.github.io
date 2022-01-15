@@ -33,7 +33,7 @@
             }
         },
         {
-            "name": "gba.js.org",
+            "name": "GBA Online (gba.js.org)",
             "date": "October 2021 - present",
             "isStarred": true,
             "isOpenSource": true,
@@ -63,7 +63,7 @@
             }
         },
         {
-            "name": "dealing with my creative roadblock😍",
+            "name": "dealing with my creative roadblocks 😍",
             "date": "December 2021 - present",
             "isStarred": false,
             "isOpenSource": "*doNotDisplay",
@@ -72,7 +72,7 @@
             "links": {}
         },
         {
-            "name": "dex",
+            "name": "Pokédex Online",
             "date": "October 2021 - December 2021",
             "isStarred": false,
             "isOpenSource": true,
@@ -87,7 +87,7 @@
             }
         },
         {
-            "name": "simple-pip",
+            "name": "Simple PiP",
             "date": "March 2021 - December 2021",
             "isStarred": true,
             "isOpenSource": true,
