@@ -28,8 +28,8 @@
             ],
             "description": "Umbra is Roblox's smartest modding tool.",
             "links": {
-                "Website (in development)": "https://frogweezer.github.io/umbra",
-                "Releases": "https://github.com/frogweezer/umbra"
+                "Website (in development)": "https://ayvacs.github.io/umbra",
+                "Releases": "https://github.com/ayvacs/umbra"
             }
         },
         {
@@ -45,7 +45,7 @@
             "description": "GBA Online is a light-weight online emulator for the GameBoy Advance based on Iodine. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
             "links": {
                 "Web link": "https://gba.js.org",
-                "GitHub source code": "https://github.com/frogweezer/gba.js.org"
+                "GitHub source code": "https://github.com/ayvacs/gba.js.org"
             }
         },
         {
@@ -82,8 +82,8 @@
             ],
             "description": "An online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
             "links": {
-                "Web link": "https://frogweezer.github.io/dex",
-                "GitHub source code": "https://github.com/frogweezer/dex"
+                "Web link": "https://ayvacs.github.io/dex",
+                "GitHub source code": "https://github.com/ayvacs/dex"
             }
         },
         {
@@ -94,11 +94,11 @@
             "languages": [
                 "JavaScript"
             ],
-            "icon": "https://raw.githubusercontent.com/frogweezer/simple-pip/main/src/assets/icon128black.png",
+            "icon": "https://raw.githubusercontent.com/ayvacs/simple-pip/main/src/assets/icon128black.png",
             "description": "A simple Chrome extension to pop out videos.",
             "links": {
                 "Web link": "https://simple-pip.js.org",
-                "GitHub source code": "https://github.com/frogweezer/simple-pip"
+                "GitHub source code": "https://github.com/ayvacs/simple-pip"
             }
         }
     ],
