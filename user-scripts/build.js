@@ -41,6 +41,14 @@ $.get("data/entries.json", function (data) {
         ` + title.innerHTML;
         };
 
+        var headline = dataPoint.headline;
+        if (headline) {
+            document.getElementsByClassName("entry-metadata")[i].innerHTML += `
+            <br>
+            <i>` + headline + `</i><br><br>
+            `;
+        };
+
         // Add languages
 
         var langCount = Object.keys(dataPoint.languages).length;
@@ -79,6 +87,7 @@ $.get("data/entries.json", function (data) {
         // Add metadata
 
         var div = document.getElementsByClassName("entry-metadata")[i];
+
         var isOpenSourced = dataPoint.isOpenSource;
         if (isOpenSourced == true) {
             div.innerHTML += `
@@ -90,6 +99,17 @@ $.get("data/entries.json", function (data) {
             `;
         } else if (isOpenSourced == false) {
             div.innerHTML += "<br><b>Closed-sourced</b>";
+        };
+
+        var latestUpdate = dataPoint.latestUpdate;
+        if (latestUpdate) {
+            div.innerHTML += `
+            <br>
+            &nbsp;
+            <img style="position:absolute; margin-top:1px;" src="assets/update.png" height=17>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Latest update: </b>` + latestUpdate + `
+            `;
         };
     }
 });

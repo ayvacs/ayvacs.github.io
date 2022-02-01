@@ -3,6 +3,8 @@
         {
             "name": "Brigadier",
             "date": "January 2022 - present",
+            "latestUpdate": "Title Update 9 (TU10 coming February)",
+            "headline": "Bypass Roblox's abusive filter through both text and voice chat.",
             "isStarred": true,
             "isOpenSource": false,
             "languages": [
@@ -11,10 +13,10 @@
                 "Luau"
             ],
             "icon": "assets/brigadier/icon.png",
-            "description": "Brigadier is an extension and in-game script for Roblox which securely encrypts and decrypts messages on the website and in-game, allowing you to bypass the filter. You can send blocked words, clickable links, and even images using the extension, and anyone else using the extension will be able to read your message while others will see a random list of letters and numbers.<br><br>Brigadier is available in two forms: as an extension and as a Lua script. The extension will encrypt and decrypt messages on the Roblox website, while the script handles in-game messages. The script requires a script executor.",
+            "description": "Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. It's available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (coming February, for a small extra fee).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private and closed source, with over 5,000 premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
             "links": {
                 "Preview image": "/assets/brigadier/demo.png",
-                "Contact to buy a license": "https://discord.com/users/682214024586592307"
+                "Contact to buy a license (US $ 15)": "https://discord.com/users/682214024586592307"
             }
         },
         {
@@ -35,6 +37,8 @@
         {
             "name": "GBA Online (gba.js.org)",
             "date": "October 2021 - present",
+            "headline": "The best GameBoy Advance emulator.  (probably)",
+            "latestUpdate": "v2.4.1",
             "isStarred": true,
             "isOpenSource": true,
             "languages": [
@@ -74,6 +78,7 @@
         {
             "name": "Pokédex Online",
             "date": "October 2021 - December 2021",
+            "latestUpdate": "1.0.1",
             "isStarred": false,
             "isOpenSource": true,
             "languages": [
@@ -89,6 +94,8 @@
         {
             "name": "Simple PiP",
             "date": "March 2021 - December 2021",
+            "headline": "Picture-in-Picture, but simpler.",
+            "latestUpdate": "1.0.1",
             "isStarred": true,
             "isOpenSource": true,
             "languages": [
