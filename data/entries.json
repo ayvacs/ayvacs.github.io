@@ -35,6 +35,18 @@
             }
         },
         {
+            "name": "nft-stealer",
+            "date": "January 2022",
+            "isOpenSource": true,
+            "languages": [
+                "Python"
+            ],
+            "description": "A simple Python script to steal NFTs from OpenSea",
+            "links": {
+                "GitHub source code": "https://github.com/ayvacs/nft-stealer"
+            }
+        },
+        {
             "name": "GBA Online (gba.js.org)",
             "date": "October 2021 - present",
             "headline": "The best GameBoy Advance emulator.  (probably)",
