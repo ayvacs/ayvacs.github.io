@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/nwts
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ayvacs.github.io
+  * I am nwts (https://keybase.io/nwts) on keybase.
+  * I have a public key ASClGE1zxh-lwkXmsfsSkw4sO3Al_CludG4bqCYEETwOPwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120fb51d2857c2a95153c343fe57c1e33402a922d422db492741936dab9a380a3c10a",
+      "host": "keybase.io",
+      "kid": "0120a5184d73c61fa5c245e6b1fb12930e2c3b7025fc296e746e1ba82604113c0e3f0a",
+      "uid": "24dfb319679affe17a41b51183949719",
+      "username": "nwts"
+    },
+    "merkle_root": {
+      "ctime": 1644014058,
+      "hash": "8abbb8f61424576230e636c8e551ddd957b581466fa7fb11bae24591a3bd471eb5de388d80f5b8cde53aa8617988fe00ff5110d1e987b8601593a202c738c33c",
+      "hash_meta": "b31443b493823156aa7536db2359ffe20007122a18f4f08e12cbcd8fd27d350b",
+      "seqno": 21799445
+    },
+    "service": {
+      "entropy": "ktBlji3rQ0QYLOkMCE8fgkJ3",
+      "hostname": "ayvacs.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.2"
+  },
+  "ctime": 1644014093,
+  "expire_in": 504576000,
+  "prev": "55b5ea6b68ad7fd90f1729ca2bb86ea3c2aa9a64be82e906d8fd9d29dd5a6d3c",
+  "seqno": 36,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpRhNc8YfpcJF5rH7EpMOLDtwJfwpbnRuG6gmBBE8Dj8Kp3BheWxvYWTESpcCJMQgVbXqa2itf9kPFynKK7huo8KqmmS+gukG2P2dKd1abTzEIK2uxosJ1jELbmTS9YiWkBYygQhWL7IRXKMuT9agdedhAgHCo3NpZ8RAWtU1PAt4J6FR3MC1bZEtDwuipcZPki8mt3mPC64LALMnEtwU35VaSOWUZWY5ev/LOpljEYZhBWQZBbEP+IMmC6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHlR7lEkVWlGoE8v/93OSoF7DzZesviAywdwDd9N++ygo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nwts
+
+==================================================================
