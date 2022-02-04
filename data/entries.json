@@ -15,7 +15,7 @@
             "icon": "assets/brigadier/icon.png",
             "description": "Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. It's available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (coming February, for a small extra fee).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private and closed source, with over 5,000 premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
             "links": {
-                "Preview image": "/assets/brigadier/demo.png",
+                "Landing page (under construction)": "https://ayvacs.github.io/brigadier",
                 "Contact to buy a license (US $ 15)": "https://discord.com/users/682214024586592307"
             }
         },

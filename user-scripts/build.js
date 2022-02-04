@@ -9,21 +9,22 @@ $.get("data/entries.json", function (data) {
 
         console.log("Built element " + n + "/" + dataLength);
         $("#automagic-elements").append(`
-      <div class="row-entry">
-        <div class="row">
-          <h3 class="column bullet-point dataName">` + dataPoint.name + `</h3>
-          <p class="column text-right">` + dataPoint.date + `</p>
-        </div>
+<div class="row-entry">
+<div class="row">
+<h3 class="column bullet-point dataName">` + dataPoint.name + `</h3>
+<p class="column text-right">` + dataPoint.date + `</p>
+</div>
 
-        <div class="entry-metadata"></div>
-        <p class="entry-description">` + dataPoint.description + `</p>
-      </div>
-    `);
+<div class="entry-metadata"></div>
+<p class="entry-description">` + dataPoint.description + `</p>
+</div>
+`);
 
         var rowEntry = document.getElementsByClassName("row-entry")[i];
         var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
+        var metadata = document.getElementsByClassName("entry-metadata")[i];
 
-        // Add icon image
+        // Add icons
 
         if (dataPoint.icon) {
             title.innerHTML = `
@@ -32,20 +33,19 @@ $.get("data/entries.json", function (data) {
         ` + title.innerHTML;
         };
 
-        // Add star icon
-
-        if (dataPoint.isStarred == true) {
+        if (dataPoint.isStarred) {
             title.innerHTML = `
         <img style="position:absolute; margin-top:2px;" src="assets/star.png" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         ` + title.innerHTML;
         };
 
-        var headline = dataPoint.headline;
-        if (headline) {
-            document.getElementsByClassName("entry-metadata")[i].innerHTML += `
+        // Add headline (has to come before languages)
+
+        if (dataPoint.headline) {
+            metadata.innerHTML += `
             <br>
-            <i>` + headline + `</i><br><br>
+            <i>` + dataPoint.headline + `</i><br><br>
             `;
         };
 
@@ -67,7 +67,7 @@ $.get("data/entries.json", function (data) {
                     div.innerHTML += lang + ", ";
                 }
             }
-        }
+        };
 
         // Add links
 
@@ -84,31 +84,27 @@ $.get("data/entries.json", function (data) {
             rowEntry.append(a);
         };
 
-        // Add metadata
+        // Generic metadata
 
-        var div = document.getElementsByClassName("entry-metadata")[i];
-
-        var isOpenSourced = dataPoint.isOpenSource;
-        if (isOpenSourced == true) {
-            div.innerHTML += `
+        if (dataPoint.isOpenSourced == true) {
+            metadata.innerHTML += `
             <br>
             &nbsp;
             <img style="position:absolute; margin-top:1px;" src="assets/github.png" height=17>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <b>Open-sourced</b>
             `;
-        } else if (isOpenSourced == false) {
-            div.innerHTML += "<br><b>Closed-sourced</b>";
+        } else {
+            metadata.innerHTML += "<br><b>Closed-sourced</b>";
         };
 
-        var latestUpdate = dataPoint.latestUpdate;
-        if (latestUpdate) {
-            div.innerHTML += `
+        if (dataPoint.latestUpdate) {
+            metadata.innerHTML += `
             <br>
             &nbsp;
             <img style="position:absolute; margin-top:1px;" src="assets/update.png" height=17>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <b>Latest update: </b>` + latestUpdate + `
+            <b>Latest update: </b>` + dataPoint.latestUpdate + `
             `;
         };
     }
