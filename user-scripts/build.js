@@ -23,6 +23,7 @@ $.get("data/entries.json", function (data) {
         var rowEntry = document.getElementsByClassName("row-entry")[i];
         var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
         var metadata = document.getElementsByClassName("entry-metadata")[i];
+        var useMetaIcons = false;
 
         // Add icons
 
@@ -86,7 +87,7 @@ $.get("data/entries.json", function (data) {
 
         // Generic metadata
 
-        if (dataPoint.isOpenSourced == true) {
+        if (useMetaIcons && dataPoint.isOpenSource) {
             metadata.innerHTML += `
             <br>
             &nbsp;
@@ -98,7 +99,7 @@ $.get("data/entries.json", function (data) {
             metadata.innerHTML += "<br><b>Closed-sourced</b>";
         };
 
-        if (dataPoint.latestUpdate) {
+        if (useMetaIcons && dataPoint.latestUpdate) {
             metadata.innerHTML += `
             <br>
             &nbsp;

@@ -37,13 +37,12 @@
         {
             "name": "nft-stealer",
             "date": "January 2022",
-            "isOpenSource": true,
+            "isOpenSource": false,
             "languages": [
                 "Python"
             ],
             "description": "A simple Python script to steal NFTs from OpenSea",
             "links": {
-                "GitHub source code": "https://github.com/ayvacs/nft-stealer"
             }
         },
         {
