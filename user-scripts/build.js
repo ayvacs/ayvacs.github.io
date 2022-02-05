@@ -22,8 +22,17 @@ $.get("data/entries.json", function (data) {
 
         var rowEntry = document.getElementsByClassName("row-entry")[i];
         var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
+        var dates = rowEntry.getElementsByClassName("column text-right")[0];
         var metadata = document.getElementsByClassName("entry-metadata")[i];
         var useMetaIcons = false;
+
+        // Ok first we gotta indent it
+
+        if (dataPoint.isSub) {
+            rowEntry.style.position = "relative"
+            rowEntry.style.left = "2.5%"
+            rowEntry.style.width = "45%"
+        }
 
         // Add icons
 
@@ -52,37 +61,59 @@ $.get("data/entries.json", function (data) {
 
         // Add languages
 
-        var langCount = Object.keys(dataPoint.languages).length;
-        if (langCount !== 0) {
-            var div = document.getElementsByClassName("entry-metadata")[i];
-            div.innerHTML += "<b>Languages:</b> ";
-            var langN = 0; // Counter variable
-            for (var l = 0; l < langCount; l++) {
-                langN++;
-                var lang = dataPoint.languages[l];
-                var div = document.getElementsByClassName("entry-metadata")[i];
+        if (dataPoint.languages) {
+            var langCount = Object.keys(dataPoint.languages).length;
+            if (langCount !== 0) {
+                metadata.innerHTML += "<b>Languages:</b> ";
+                var langN = 0; // Counter variable
+                for (var l = 0; l < langCount; l++) {
+                    langN++;
+                    var lang = dataPoint.languages[l];
 
-                if (langN == langCount) {
-                    div.innerHTML += lang;
-                } else {
-                    div.innerHTML += lang + ", ";
+                    if (langN == langCount) {
+                        metadata.innerHTML += lang;
+                    } else {
+                        metadata.innerHTML += lang + ", ";
+                    }
                 }
-            }
+            };
+        };
+
+        // Add platforms
+
+        if (dataPoint.platforms) {
+            if (dataPoint.languages) {metadata.innerHTML += "<br>"}
+            var platformCount = Object.keys(dataPoint.platforms).length;
+            if (platformCount !== 0) {
+                metadata.innerHTML += "<b>Platforms:</b> ";
+                var platN = 0; // Counter variable
+                for (var p = 0; p < platformCount; p++) {
+                    platN++;
+                    var plat = dataPoint.platforms[p];
+
+                    if (platN == platformCount) {
+                        metadata.innerHTML += plat;
+                    } else {
+                        metadata.innerHTML += plat + ", ";
+                    }
+                }
+            };
         };
 
         // Add links
 
-        var linkCount = Object.keys(dataPoint.links).length;
-        for (var key in dataPoint.links) {
-            var linkName = key;
-            var link = dataPoint.links[linkName];
+        if (dataPoint.links) {
+            for (var key in dataPoint.links) {
+                var linkName = key;
+                var link = dataPoint.links[linkName];
 
-            var a = document.createElement("a");
-            a.innerHTML = linkName;
-            a.href = link;
-            a.target = "_blank"
+                var a = document.createElement("a");
+                a.innerHTML = linkName;
+                a.href = link;
+                a.target = "_blank"
 
-            rowEntry.append(a);
+                rowEntry.append(a);
+            };
         };
 
         // Generic metadata

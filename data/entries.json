@@ -4,20 +4,39 @@
             "name": "Brigadier",
             "date": "January 2022 - present",
             "latestUpdate": "Title Update 9 (TU10 coming February)",
-            "headline": "Bypass Roblox's abusive filter through both text and voice chat.",
+            "headline": "Bypass Roblox's abusive filter through both text and voice chat. Over 5,500 premium users!",
             "isStarred": true,
             "isOpenSource": false,
             "languages": [
                 "JavaScript",
-                "Lua",
-                "Luau"
+                "Java",
+                "Lua // Luau",
+                "Batch",
+                "Swift (iOS and Mac)"
+            ],
+            "platforms": [
+                "Windows", "macOS", "iOS", "Linux"
             ],
             "icon": "assets/brigadier/icon.png",
-            "description": "Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. It's available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (coming February, for a small extra fee).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private and closed source, with over 5,000 premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
+            "description": "<i>Brigadier Relay is coming in March! Read below for more info.</i><br><br>Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. Brigadier is available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (coming February, for a small extra fee).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private, with over 5,500 premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
             "links": {
                 "Landing page (under construction)": "https://ayvacs.github.io/brigadier",
                 "Contact to buy a license (US $ 15)": "https://discord.com/users/682214024586592307"
             }
+        },
+        {
+            "name": "Brigadier Relay",
+            "date": "February 2022 - present",
+            "isStarred": false,
+            "isOpenSource": false,
+            "isSub": true,
+            "languages": [
+                "Lua // Luau"
+            ],
+            "platforms": [
+                "Roblox for computers (Windows, macOS)"
+            ],
+            "description": "Full-fledged UI-building toolkit. Build your own clean, responsive, modern UIs without any prior experience and for completely free. Publish your scripts on our extensive cloud library for thousands of people to use. Integrate seamless payments using Apple Pay, PayPal, or Square.<br><br>Full-fledged plugin-building toolkit. Enhance Brigadier's functionality with your own custom plugins.<br><br>Relay is whatever ya want it to be, baby. Coming in march ;)"
         },
         {
             "name": "Umbra",
@@ -25,8 +44,7 @@
             "isStarred": true,
             "isOpenSource": false,
             "languages": [
-                "Lua",
-                "Luau"
+                "Lua // Luau"
             ],
             "description": "Umbra is Roblox's smartest modding tool.",
             "links": {
@@ -69,8 +87,7 @@
             "isStarred": false,
             "isOpenSource": false,
             "languages": [
-                "Lua",
-                "Luau"
+                "Lua // Luau"
             ],
             "description": "Deepsquid, the smartest script hub. Currently in client-side development.",
             "links": {
