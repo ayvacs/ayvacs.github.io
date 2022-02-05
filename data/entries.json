@@ -10,7 +10,7 @@
             "languages": [
                 "JavaScript",
                 "Java",
-                "Lua // Luau",
+                "Lua (Luau)",
                 "Batch",
                 "Swift (iOS and Mac)"
             ],
@@ -31,12 +31,12 @@
             "isOpenSource": false,
             "isSub": true,
             "languages": [
-                "Lua // Luau"
+                "Lua (Luau)"
             ],
             "platforms": [
-                "Roblox for computers (Windows, macOS)"
+                "Roblox and Visual Studio Code; for Windows and macOS"
             ],
-            "description": "Full-fledged UI-building toolkit. Build your own clean, responsive, modern UIs without any prior experience and for completely free. Publish your scripts on our extensive cloud library for thousands of people to use. Integrate seamless payments using Apple Pay, PayPal, or Square.<br><br>Full-fledged plugin-building toolkit. Enhance Brigadier's functionality with your own custom plugins.<br><br>Relay is whatever ya want it to be, baby. Coming in march ;)"
+            "description": "Brigadier Relay is a full-fledged script, plugin, and UI creation toolkit. Build your own clean, responsive, modern UIs without any prior experience and for completely free. Publish your scripts on our extensive cloud library for thousands of people to use. Integrate seamless payments using Apple Pay, PayPal, or Square.<br><br>Relay is the most feature-packed all-in-one license for developers.<ul><li>Create scripts and plugins, and publish them for free to the cloud</li><li>Accept payments with Apple Pay, PayPal, and Square</li><li>Free access to our extensive developers' API and collection of libraries</li><li>Free access to Brigadier UI Library, the easiest way to create clean and modern interfaces for the twenty-first century</li></ul>Brigadier Relay is whatever ya want it to be, baby. Coming in march ;)"
         },
         {
             "name": "Umbra",
@@ -44,7 +44,7 @@
             "isStarred": true,
             "isOpenSource": false,
             "languages": [
-                "Lua // Luau"
+                "Lua (Luau)"
             ],
             "description": "Umbra is Roblox's smartest modding tool.",
             "links": {
@@ -87,21 +87,12 @@
             "isStarred": false,
             "isOpenSource": false,
             "languages": [
-                "Lua // Luau"
+                "Lua (Luau)"
             ],
             "description": "Deepsquid, the smartest script hub. Currently in client-side development.",
             "links": {
                 "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
             }
-        },
-        {
-            "name": "dealing with my creative roadblocks 😍",
-            "date": "December 2021 - present",
-            "isStarred": false,
-            "isOpenSource": "*doNotDisplay",
-            "languages": [],
-            "description": "yaaaay",
-            "links": {}
         },
         {
             "name": "Pokédex Online",
@@ -113,7 +104,7 @@
                 "JavaScript",
                 "HTML"
             ],
-            "description": "An online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
+            "description": "Pokédex Online is an online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
             "links": {
                 "Web link": "https://ayvacs.github.io/dex",
                 "GitHub source code": "https://github.com/ayvacs/dex"

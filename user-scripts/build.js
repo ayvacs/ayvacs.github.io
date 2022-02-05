@@ -54,7 +54,6 @@ $.get("data/entries.json", function (data) {
 
         if (dataPoint.headline) {
             metadata.innerHTML += `
-            <br>
             <i>` + dataPoint.headline + `</i><br><br>
             `;
         };

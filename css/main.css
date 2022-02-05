@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "SFProOpenType";
-    src: url("SF-Pro.ttf") format("truetype");
-}
-
 #back-button {
     position: fixed;
     text-decoration: none;
@@ -13,8 +8,7 @@
 
 body, html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /* font-family: "SFProOpenType", "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
-    /* font-family: 'Noto Sans', sans-serif; */
+    /*background-image: url("https://optifine.net/images/snow64b.gif");*/
 }
 
 h1, h2 {
