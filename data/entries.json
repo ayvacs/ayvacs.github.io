@@ -15,7 +15,10 @@
                 "Swift (iOS and Mac)"
             ],
             "platforms": [
-                "Windows", "macOS", "iOS", "Linux"
+                "Windows",
+                "macOS",
+                "iOS",
+                "Linux"
             ],
             "icon": "assets/brigadier/icon.png",
             "description": "<i>Brigadier Relay is coming in March! Read below for more info.</i><br><br>Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. Brigadier is available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (coming February, for a small extra fee).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private, with over 5,500 premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
@@ -60,8 +63,7 @@
                 "Python"
             ],
             "description": "A simple Python script to steal NFTs from OpenSea",
-            "links": {
-            }
+            "links": {}
         },
         {
             "name": "GBA Online (gba.js.org)",

@@ -81,7 +81,7 @@ $.get("data/entries.json", function (data) {
         // Add platforms
 
         if (dataPoint.platforms) {
-            if (dataPoint.languages) {metadata.innerHTML += "<br>"}
+            if (dataPoint.languages) { metadata.innerHTML += "<br>" }
             var platformCount = Object.keys(dataPoint.platforms).length;
             if (platformCount !== 0) {
                 metadata.innerHTML += "<b>Platforms:</b> ";
