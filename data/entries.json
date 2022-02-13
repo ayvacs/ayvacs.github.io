@@ -4,7 +4,7 @@
             "name": "Brigadier",
             "date": "January 2022 - present",
             "latestUpdate": "Title Update 9 (TU10 coming February)",
-            "headline": "Bypass Roblox's abusive filter through both text and voice chat. Over 5,500 premium users!",
+            "headline": "Bypass Roblox's abusive filter through both text and voice chat. Over {bUsers} premium users!",
             "isStarred": true,
             "isOpenSource": false,
             "languages": [
@@ -21,16 +21,19 @@
                 "Linux"
             ],
             "icon": "assets/brigadier/icon.png",
-            "description": "<i>Brigadier Relay is coming in March! Read below for more info.</i><br><br>Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. Brigadier is available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (coming February, for a small extra fee).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private, with over 5,500 premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
+            "description": "<i>Brigadier DevKit has now released! Read below for more info.</i><br><br>Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. Brigadier is available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (coming February, for a small extra fee).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private, with over {bUsers} premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
             "links": {
-                "Landing page (under construction)": "https://ayvacs.github.io/brigadier",
-                "Contact to buy a license (US $ 15)": "https://discord.com/users/682214024586592307"
+                "Join {bUsers} other users and buy a license! (US $ 15)": "https://discord.com/users/682214024586592307",
+                "Landing page (under construction)": "https://ayvacs.github.io/brigadier"
             }
         },
         {
-            "name": "Brigadier Relay",
+            "name": "Brigadier DevKit",
+            "nameDetails": "(previously Relay)",
             "date": "February 2022 - present",
-            "isStarred": false,
+            "latestUpdate": "DevKit 1.0.97",
+            "headline": "Roblox's most feature-packed script development toolkit; over {bDkUsers} premium users",
+            "isStarred": true,
             "isOpenSource": false,
             "isSub": true,
             "languages": [
@@ -39,7 +42,7 @@
             "platforms": [
                 "Roblox and Visual Studio Code; for Windows and macOS"
             ],
-            "description": "Brigadier Relay is a full-fledged script, plugin, and UI creation toolkit. Build your own clean, responsive, modern UIs without any prior experience and for completely free. Publish your scripts on our extensive cloud library for thousands of people to use. Integrate seamless payments using Apple Pay, PayPal, or Square.<br><br>Relay is the most feature-packed all-in-one license for developers.<ul><li>Create scripts and plugins, and publish them for free to the cloud</li><li>Accept payments with Apple Pay, PayPal, and Square</li><li>Free access to our extensive developers' API and collection of libraries</li><li>Free access to Brigadier UI Library, the easiest way to create clean and modern interfaces for the twenty-first century</li></ul>Brigadier Relay is whatever ya want it to be, baby. Coming in februrary ;)"
+            "description": "Brigadier DevKit is a full-fledged script, plugin, and UI creation toolkit. Build your own clean, responsive, modern UIs without any prior experience and for completely free. Publish your scripts on our extensive cloud library for thousands of people to use. Integrate seamless payments using Apple Pay*, PayPal, or Square.<br><br>DevKit is the most feature-packed all-in-one license for developers.<ul><li>Create scripts and plugins, and publish them for free to the cloud</li><li>Accept payments with Apple Pay*, PayPal, and Square</li><li>Free access to our extensive developers' API and collection of libraries</li><li>Free access to the Brigadier UI Library, the easiest way to create clean and modern interfaces for the twenty-first century</li></ul>it LITERALLY only costs 10$ to add DevKit to ur brigadier license,,, WHAT R U WAITING FOR !!!! JOIN {bDkUsers} OTHER PPL RN!!!! <br><br>*<i>Apple Pay is available on macOS only due to Apple's gayass restrictions, sorry !!</i>"
         },
         {
             "name": "Umbra",
@@ -56,13 +59,26 @@
             }
         },
         {
+            "name": "web-stealer",
+            "date": "February 2022",
+            "headline": "see somethin ya like on the internet? well, *yoink* it.",
+            "isOpenSource": true,
+            "languages": [
+                "Python"
+            ],
+            "description": "A simple Python script to steal entire domains or subdomains.",
+            "links": {
+                "I downloaded a game's entire ≈50gb server with the script": "https://keybase.pub/nwts/the-archives/openttd"
+            }
+        },
+        {
             "name": "nft-stealer",
             "date": "January 2022",
             "isOpenSource": false,
             "languages": [
                 "Python"
             ],
-            "description": "A simple Python script to steal NFTs from OpenSea",
+            "description": "A simple Python script to steal NFTs from OpenSea.",
             "links": {}
         },
         {
