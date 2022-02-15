@@ -8,7 +8,7 @@
 
 body, html {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /*background-image: url("https://optifine.net/images/snow64b.gif");*/
+    /*background-image: url("../assets/snow64a.png");*/
 }
 
 h1, h2 {
@@ -22,6 +22,10 @@ hr {
 a {
     color: blue;
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 a:active {
