@@ -45,21 +45,19 @@
             "description": "Brigadier DevKit is a full-fledged script, plugin, and UI creation toolkit. Build your own clean, responsive, modern UIs without any prior experience and for completely free. Publish your scripts on our extensive cloud library for thousands of people to use. Integrate seamless payments using Apple Pay*, PayPal, or Square.<br><br>DevKit is the most feature-packed all-in-one license for developers.<ul><li>Create scripts and plugins, and publish them for free to the cloud</li><li>Accept payments with Apple Pay*, PayPal, and Square</li><li>Free access to our extensive developers' API and collection of libraries</li><li>Free access to the Brigadier UI Library, the easiest way to create clean and modern interfaces for the twenty-first century</li></ul>it LITERALLY only costs 10$ to add DevKit to ur brigadier license,,, WHAT R U WAITING FOR !!!! JOIN {bDkUsers} OTHER PPL RN!!!! <br><br>*<i>Apple Pay is available on macOS only due to Apple's gayass restrictions, sorry !!</i>"
         },
         {
-            "name": "Umbra",
-            "date": "January 2022 - present",
-            "isStarred": true,
-            "isOpenSource": false,
+            "name": "Wordle Solver",
+            "date": "February 2022",
+            "isOpenSource": true,
             "languages": [
-                "Lua (Luau)"
+                "Python"
             ],
-            "description": "Umbra is Roblox's smartest modding tool.",
+            "description": "A Python program to find any Wordle solution. It found 100% of the solutions without any trouble!",
             "links": {
-                "Website (in development)": "https://ayvacs.github.io/umbra",
-                "Releases": "https://github.com/ayvacs/umbra"
+                "GitHub source code": "https://github.com/ayvacs/wordle"
             }
         },
         {
-            "name": "web-stealer",
+            "name": "Web Stealer",
             "date": "February 2022",
             "headline": "see somethin ya like on the internet? well, *yoink* it.",
             "isOpenSource": true,
@@ -68,18 +66,9 @@
             ],
             "description": "A simple Python script to steal entire domains or subdomains.",
             "links": {
+                "GitHub source code": "https://github.com/ayvacs/web-stealer",
                 "I downloaded a game's entire ≈50gb server with the script": "https://keybase.pub/nwts/the-archives/openttd"
             }
-        },
-        {
-            "name": "nft-stealer",
-            "date": "January 2022",
-            "isOpenSource": false,
-            "languages": [
-                "Python"
-            ],
-            "description": "A simple Python script to steal NFTs from OpenSea.",
-            "links": {}
         },
         {
             "name": "GBA Online (gba.js.org)",
@@ -93,7 +82,7 @@
                 "HTML"
             ],
             "icon": "https://gba.js.org/assets/images/macos-11x/Icon-MacOS-512x512@2x.png",
-            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance based on Iodine. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
+            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance, based on Iodine. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
             "links": {
                 "Web link": "https://gba.js.org",
                 "GitHub source code": "https://github.com/ayvacs/gba.js.org"
@@ -133,7 +122,7 @@
             "date": "March 2021 - December 2021",
             "headline": "Picture-in-Picture, but simpler.",
             "latestUpdate": "1.0.1",
-            "isStarred": true,
+            "isStarred": false,
             "isOpenSource": true,
             "languages": [
                 "JavaScript"
