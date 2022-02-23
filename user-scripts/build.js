@@ -1,12 +1,12 @@
 // Functions
-function b (i) {
+function b(i) {
     // Replaces i with the current Brigadier user count.
     return i.replace("{bUsers}", "6,200")
-            .replace("{bDkUsers}", "1,600");
+        .replace("{bDkUsers}", "1,600");
 };
 
 
-$.get("data/entries.json", function (data) {
+$.get("data/entries.json", function(data) {
     // Initialize Projects
     var projects = data.projects;
     var dataLength = projects.length;
@@ -27,7 +27,7 @@ $.get("data/entries.json", function (data) {
             name += "&nbsp;<span style=\"font-weight:normal;font-style:italic;font-size:0.8em\">" + dataPoint.nameDetails + "</span>"
         };
 
-        $("#automagic-elements").append(`
+        $("#proj").append(`
             <div class="row-entry">
                 <div class="row">
                 <h3 class="column bullet-point dataName">` + name + `</h3>
@@ -43,11 +43,17 @@ $.get("data/entries.json", function (data) {
         var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
         var dates = rowEntry.getElementsByClassName("column text-right")[0];
         var metadata = document.getElementsByClassName("entry-metadata")[i];
+
+        var useHeadlines = false;
         var useMetaIcons = false;
+        var useIndents = false;
+        var useLinks = true;
+        var useIcons = false;
+        var useStars = false;
 
         // Ok first we gotta indent it
 
-        if (dataPoint.isSub) {
+        if (useIndents && dataPoint.isSub) {
             rowEntry.style.position = "relative";
             rowEntry.style.left = "2.5%";
             rowEntry.style.width = "45%";
@@ -55,14 +61,14 @@ $.get("data/entries.json", function (data) {
 
         // Add icons
 
-        if (dataPoint.icon) {
+        if (useIcons && dataPoint.icon) {
             title.innerHTML = `
         <img style="position:absolute; margin-top:2px;" src="` + dataPoint.icon + `" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         ` + title.innerHTML;
         };
 
-        if (dataPoint.isStarred) {
+        if (useStars && dataPoint.isStarred) {
             title.innerHTML = `
         <img style="position:absolute; margin-top:2px;" src="assets/star.png" height=18.72>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -71,7 +77,7 @@ $.get("data/entries.json", function (data) {
 
         // Add headline (has to come before languages)
 
-        if (dataPoint.headline) {
+        if (useHeadlines && dataPoint.headline) {
             metadata.innerHTML += `
             <i>` + b(dataPoint.headline) + `</i><br><br>
             `;
@@ -120,17 +126,19 @@ $.get("data/entries.json", function (data) {
 
         // Add links
 
-        if (dataPoint.links) {
-            for (var key in dataPoint.links) {
-                var linkName = key;
-                var link = dataPoint.links[linkName];
+        if (useLinks) {
+            if (dataPoint.links) {
+                for (var key in dataPoint.links) {
+                    var linkName = key;
+                    var link = dataPoint.links[linkName];
 
-                var a = document.createElement("a");
-                a.innerHTML = b(linkName);
-                a.href = link;
-                a.target = "_blank";
+                    var a = document.createElement("a");
+                    a.innerHTML = b(linkName);
+                    a.href = link;
+                    a.target = "_blank";
 
-                rowEntry.append(a);
+                    rowEntry.append(a);
+                };
             };
         };
 

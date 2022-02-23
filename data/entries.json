@@ -1,12 +1,7 @@
 {
-    "projects": [
-        {
+    "projects": [{
             "name": "Brigadier",
             "date": "January 2022 - present",
-            "latestUpdate": "Title Update 9 (TU10 coming February)",
-            "headline": "Bypass Roblox's abusive filter through both text and voice chat. Over {bUsers} premium users!",
-            "isStarred": true,
-            "isOpenSource": false,
             "languages": [
                 "JavaScript",
                 "Java",
@@ -20,93 +15,28 @@
                 "iOS",
                 "Linux"
             ],
-            "icon": "assets/brigadier/icon.png",
-            "description": "<i>Brigadier DevKit has now released! Read below for more info.</i><br><br>Brigadier is a modding tool which allows you to bypass the Roblox filter in a large variety of ways. Enjoy a wholesome world of swearing and slurs whenever you use Brigadier. Brigadier is available in every single form of Roblox communication: in-game text chat, DM's and group chats, personal messages, and even voice chat (included with DevKit).<br><br>Worried about privacy? No worries, only other Brigadier users can see the explicit messages you type. Not even Roblox staff can see the messages; it's that hidden.<br><br>The Discord server is private, with over {bUsers} premium users. Brigadier only costs US$15. Brigadier is included as part of Umbra; Roblox's smartest modding tool, currently in development.",
+            "description": "A project I've lead since January which allows users of Roblox to bypass the platform's annoying and restrictive filter. I'm immensly proud of its community of over {bUsers} premium users and {bDkUsers} developers.",
             "links": {
-                "Join {bUsers} other users and buy a license! (US $ 15)": "https://discord.com/users/682214024586592307",
+                "License inquiries (US $15)": "https://discord.com/users/682214024586592307",
                 "Landing page (under construction)": "https://ayvacs.github.io/brigadier"
             }
         },
         {
-            "name": "Brigadier DevKit",
-            "nameDetails": "(previously Relay)",
-            "date": "February 2022 - present",
-            "latestUpdate": "DevKit 1.0.97",
-            "headline": "Roblox's most feature-packed script development toolkit; over {bDkUsers} premium users",
-            "isStarred": true,
-            "isOpenSource": false,
-            "isSub": true,
-            "languages": [
-                "Lua (Luau)"
-            ],
-            "platforms": [
-                "Roblox and Visual Studio Code; for Windows and macOS"
-            ],
-            "description": "Brigadier DevKit is a full-fledged script, plugin, and UI creation toolkit. Build your own clean, responsive, modern UIs without any prior experience and for completely free. Publish your scripts on our extensive cloud library for thousands of people to use. Integrate seamless payments using Apple Pay*, PayPal, or Square.<br><br>DevKit is the most feature-packed all-in-one license for developers.<ul><li>Create scripts and plugins, and publish them for free to the cloud</li><li>Accept payments with Apple Pay*, PayPal, and Square</li><li>Free access to our extensive developers' API and collection of libraries</li><li>Free access to the Brigadier UI Library, the easiest way to create clean and modern interfaces for the twenty-first century</li></ul>it LITERALLY only costs 10$ to add DevKit to ur brigadier license,,, WHAT R U WAITING FOR !!!! JOIN {bDkUsers} OTHER PPL RN!!!! <br><br>*<i>Apple Pay is available on macOS only due to Apple's gayass restrictions, sorry !!</i>"
-        },
-        {
-            "name": "Wordle Solver",
-            "date": "February 2022",
-            "isOpenSource": true,
-            "languages": [
-                "Python"
-            ],
-            "description": "A Python program to find any Wordle solution. It found 100% of the solutions without any trouble!",
-            "links": {
-                "GitHub source code": "https://github.com/ayvacs/wordle"
-            }
-        },
-        {
-            "name": "Web Stealer",
-            "date": "February 2022",
-            "headline": "see somethin ya like on the internet? well, *yoink* it.",
-            "isOpenSource": true,
-            "languages": [
-                "Python"
-            ],
-            "description": "A simple Python script to steal entire domains or subdomains.",
-            "links": {
-                "GitHub source code": "https://github.com/ayvacs/web-stealer",
-                "I downloaded a game's entire ≈50gb server with the script": "https://keybase.pub/nwts/the-archives/openttd"
-            }
-        },
-        {
-            "name": "GBA Online (gba.js.org)",
-            "date": "October 2021 - present",
-            "headline": "The best GameBoy Advance emulator.  (probably)",
-            "latestUpdate": "v2.4.1",
-            "isStarred": true,
-            "isOpenSource": true,
+            "name": "gba.js.org",
+            "date": "October 2021 - February 2022",
             "languages": [
                 "JavaScript",
                 "HTML"
             ],
-            "icon": "https://gba.js.org/assets/images/macos-11x/Icon-MacOS-512x512@2x.png",
-            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance, based on Iodine. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
+            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance that I worked on from October 2021 to February 2022. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
             "links": {
                 "Web link": "https://gba.js.org",
                 "GitHub source code": "https://github.com/ayvacs/gba.js.org"
             }
         },
         {
-            "name": "Deepsquid",
-            "date": "December 2021 - present",
-            "isStarred": false,
-            "isOpenSource": false,
-            "languages": [
-                "Lua (Luau)"
-            ],
-            "description": "Deepsquid, the smartest script hub. Currently in client-side development.",
-            "links": {
-                "GitHub source code": "https://github.com/deepsquid-ai/deepsquid"
-            }
-        },
-        {
             "name": "Pokédex Online",
             "date": "October 2021 - December 2021",
-            "latestUpdate": "1.0.1",
-            "isStarred": false,
-            "isOpenSource": true,
             "languages": [
                 "JavaScript",
                 "HTML"
@@ -120,15 +50,10 @@
         {
             "name": "Simple PiP",
             "date": "March 2021 - December 2021",
-            "headline": "Picture-in-Picture, but simpler.",
-            "latestUpdate": "1.0.1",
-            "isStarred": false,
-            "isOpenSource": true,
             "languages": [
                 "JavaScript"
             ],
-            "icon": "https://raw.githubusercontent.com/ayvacs/simple-pip/main/src/assets/icon128black.png",
-            "description": "A simple Chrome extension to pop out videos.",
+            "description": "A Chrome extension to pop out videos from the player. This little window can be resized and moved however you'd like, and even floats on top of your other windows.",
             "links": {
                 "Web link": "https://simple-pip.js.org",
                 "GitHub source code": "https://github.com/ayvacs/simple-pip"
