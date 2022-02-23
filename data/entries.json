@@ -1,10 +1,11 @@
 {
-    "projects": [{
+    "projects": [
+        {
             "name": "Brigadier",
             "date": "January 2022 - present",
             "languages": [
-                "JavaScript",
                 "Java",
+                "JavaScript",
                 "Lua (Luau)",
                 "Batch",
                 "Swift (iOS and Mac)"
@@ -24,10 +25,7 @@
         {
             "name": "gba.js.org",
             "date": "October 2021 - February 2022",
-            "languages": [
-                "JavaScript",
-                "HTML"
-            ],
+            "languages": ["JavaScript", "HTML"],
             "description": "GBA Online is a light-weight online emulator for the GameBoy Advance that I worked on from October 2021 to February 2022. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
             "links": {
                 "Web link": "https://gba.js.org",
@@ -37,10 +35,7 @@
         {
             "name": "Pokédex Online",
             "date": "October 2021 - December 2021",
-            "languages": [
-                "JavaScript",
-                "HTML"
-            ],
+            "languages": ["JavaScript", "HTML"],
             "description": "Pokédex Online is an online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
             "links": {
                 "Web link": "https://ayvacs.github.io/dex",
@@ -50,9 +45,7 @@
         {
             "name": "Simple PiP",
             "date": "March 2021 - December 2021",
-            "languages": [
-                "JavaScript"
-            ],
+            "languages": ["JavaScript"],
             "description": "A Chrome extension to pop out videos from the player. This little window can be resized and moved however you'd like, and even floats on top of your other windows.",
             "links": {
                 "Web link": "https://simple-pip.js.org",
