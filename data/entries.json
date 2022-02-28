@@ -16,7 +16,7 @@
                 "iOS",
                 "Linux"
             ],
-            "description": "A project I've lead since January which allows users of Roblox to bypass the platform's annoying and restrictive filter. I'm immensly proud of its community of over {bUsers} premium users and {bDkUsers} developers.",
+            "description": "A project I've lead since January which allows users of Roblox to bypass the platform's annoying and restrictive filter. A community of over {bUsers} premium users and {bDkUsers} developers.",
             "links": {
                 "License inquiries (US $15)": "https://discord.com/users/682214024586592307",
                 "Landing page (under construction)": "https://ayvacs.github.io/brigadier"
@@ -30,16 +30,6 @@
             "links": {
                 "Web link": "https://gba.js.org",
                 "GitHub source code": "https://github.com/ayvacs/gba.js.org"
-            }
-        },
-        {
-            "name": "Pokédex Online",
-            "date": "October 2021 - December 2021",
-            "languages": ["JavaScript", "HTML"],
-            "description": "Pokédex Online is an online global Pokédex, dynamically generated using data grabbed from <a href=\"https://pokeapi.co/\">PokéApi.</a>",
-            "links": {
-                "Web link": "https://ayvacs.github.io/dex",
-                "GitHub source code": "https://github.com/ayvacs/dex"
             }
         },
         {
