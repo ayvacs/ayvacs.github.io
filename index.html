@@ -9,7 +9,7 @@
 
 <body>
     <!--https://cnrad.dev--><img src="https://cnrad.dev/assets/background.jpg" style="z-index:0;position:fixed;top:-5rem;right:0px;object-fit:cover;width:100vw;height:auto;min-height:70rem;filter:grayscale(45%);pointer-events:none;">
-	<div id="main">
+	<div id="mainbg"><div id="main">
         <h2>hi im ave 👋</h2>
 		<p>3 years of javascript, lua, ruby, and python</p>
         
@@ -22,7 +22,7 @@
         <div>
             <a id="portfolio" href="portfolio">full portfolio</a> — <a href="https://keybase.io/nwts">keybase</a> — <a href="https://github.com/ayvacs">github</a> — <a href="https://keybase.io/nwts/pgp_keys.asc?fingerprint=0fe5c59839767246905e91cce3b2b998d02dccc6">pgp</a>
         </div>
-	</div>
+	</div></div>
     <style>
         body {
             background-color: #0e1117;
@@ -30,13 +30,22 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
         }
 
-        #main {
+        #mainbg {
             position: absolute;
-            width: 25%;
-            left: 20%;
+            height: 100%;
+            width: 1200px;
             top: 50%;
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: rgb(0 0 0 / 90%) 0px 0px 100px 150px;
+        }
+
+        #main {
+            position: relative;
+            top: 30%;
+            left: 55%;
+            width: 540px;
         }
 
         a, a:active {
