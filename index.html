@@ -4,17 +4,24 @@
 <head>
 	<link rel="icon" href="assets/favicon.png">
 	<title>ave</title>
+    <base target="blank">
 </head>
 
 <body>
+    <!--https://cnrad.dev--><img src="https://cnrad.dev/assets/background.jpg" style="z-index:0;position:fixed;top:-5rem;right:0px;object-fit:cover;width:100vw;height:auto;min-height:70rem;filter:grayscale(45%);pointer-events:none;">
 	<div id="main">
         <h2>hi im ave 👋</h2>
-		<p>3 years of javascript, lua, ruby</p>
+		<p>3 years of javascript, lua, ruby, and python</p>
+        
         <ul>
-            <li>i made <a href="https://gba.js.org/">gba.js.org</a></li>
+            <li>built the <a href="">brigadier</a> cloud development and free speech toolkit for roblox ( ≈ 9,500 users)</li>
+            <li>wrote and deployed <a href="https://gba.js.org/">gba.js.org</a>, a 100% javascript gameboy advance emulator</li>
         </ul>
-	    <h3>header</h3>
-	    <p>text</p>
+
+        <p>discord: <a href="https://discord.com/users/682214024586592307">ave#1541</a><p>
+        <div>
+            <a id="portfolio" href="portfolio">full portfolio</a> — <a href="https://keybase.io/nwts">keybase</a> — <a href="https://github.com/ayvacs">github</a> — <a href="https://keybase.io/nwts/pgp_keys.asc?fingerprint=0fe5c59839767246905e91cce3b2b998d02dccc6">pgp</a>
+        </div>
 	</div>
     <style>
         body {
@@ -25,6 +32,7 @@
 
         #main {
             position: absolute;
+            width: 25%;
             left: 20%;
             top: 50%;
             -webkit-transform: translate(-50%, -50%);
@@ -34,12 +42,30 @@
         a, a:active {
             color: white;
             font-weight: bold;
+            text-decoration: none;
         }
 
         a::before {
-            content: "\1F517\00a0";
+            /*content: "\1F517\00a0";*/
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
     </style>
+
+    <!-- Fix links while hosting locally -->
+    <script>
+        var url = document.location.hostname;
+        if (url == "localhost" || url == "127.0.0.1") {
+            document.getElementById("portfolio").href = "portfolio.html"
+        };
+    </script>
 </body>
 
 </html>
