@@ -1,65 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Projects</title>
-
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="assets/favicon.png" type="image/png">
-
-    <script src="user-scripts/jquery-3.6.0.min.js"></script>
-    <script src="user-scripts/build.js"></script>
+	<link rel="icon" href="assets/favicon.png">
+	<title>ave</title>
 </head>
 
 <body>
-    <div align="center">
-        <h1>hi im ave 👋</h1>
-        <table>
-            <tr>
-                <td>
-                    <div class="button">
-                        <a target="_blank" href="https://discord.com/users/682214024586592307">Discord</a>
-                    </div>
-                </td>
-                <td>
-                    <div class="button">
-                        <a target="_blank" href="https://keybase.io/nwts">Keybase</a>
-                    </div>
-                </td>
-                <td>
-                    <div class="button">
-                        <a target="_blank" href="https://github.com/ayvacs">GitHub</a>
-                    </div>
-                </td>
-                <td>
-                    <div class="button">
-                        <a target="_blank" href="https://news.ycombinator.com/user?id=ayvacs">HackerNews</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
+	<div id="main">
+        <h2>hi im ave 👋</h2>
+		<p>3 years of javascript, lua, ruby</p>
+        <ul>
+            <li>i made <a href="https://gba.js.org/">gba.js.org</a></li>
+        </ul>
+	    <h3>header</h3>
+	    <p>text</p>
+	</div>
+    <style>
+        body {
+            background-color: #0e1117;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+        }
 
+        #main {
+            position: absolute;
+            left: 20%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
 
-    <div class="automagic-elements" id="proj">
-        <h2>Projects</h2>
-        <hr>
-        <!-- Elements will build automagically :D -->
-    </div>
+        a, a:active {
+            color: white;
+            font-weight: bold;
+        }
 
-    <hr>
-    <br>
-
-    <div align="center">
-        <img style="position:relative; top:2px; height:16px;" src="https://keybase.io/images/paramproofs/services/pgp/logo_black_16@2x.png">
-        &nbsp;&nbsp;
-        <a target="_blank" href="https://keybase.io/nwts/pgp_keys.asc">E3B2 B998 D02D CCC6</a>
-    </div>
-    <br>
+        a::before {
+            content: "\1F517\00a0";
+        }
+    </style>
 </body>
 
 </html>
