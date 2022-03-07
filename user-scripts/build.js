@@ -1,12 +1,12 @@
 // Functions
 function b(i) {
     // Replaces i with the current Brigadier user count.
-    return i.replace("{bUsers}", "6,200")
-        .replace("{bDkUsers}", "1,600");
+    return i.replace("{bUsers}", "9,500")
+        .replace("{bDkUsers}", "3,600");
 };
 
 
-$.get("data/entries.json", function(data) {
+$.get("assets/entries.json", function(data) {
     // Initialize Projects
     var projects = data.projects;
     var dataLength = projects.length;

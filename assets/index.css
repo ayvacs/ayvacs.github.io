@@ -1,0 +1,89 @@
+#back-button {
+    position: fixed;
+    text-decoration: none;
+    font-size: 35px;
+    top: 10px;
+    left: 15px;
+}
+
+body,
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /*background-image: url("../assets/snow64a.png");*/
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+hr {
+    width: 20%;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+a::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.row-entry {
+    margin: auto;
+    /* PC */
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Phones */
+    .row-entry {
+        width: 90%;
+    }
+}
+
+.row-entry::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bullet-point::before {
+    content: "\00A0\00A0\00A0\00A0\2756\00A0\00A0\00A0\00A0"
+}
+
+td {
+    padding: 10px
+}
+
+.button {
+    padding: 10px;
+}
