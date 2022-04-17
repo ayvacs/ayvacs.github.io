@@ -1,8 +1,8 @@
 // Functions
 function b(i) {
     // Replaces i with the current Brigadier user count.
-    return i.replace("{bUsers}", "9,500")
-        .replace("{bDkUsers}", "3,600");
+    return i.replace("{bUsers}", "18,000")
+        .replace("{bDkUsers}", "7,500");
 };
 
 
