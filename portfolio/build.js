@@ -36,7 +36,7 @@ $.get("entries.json", function(data) {
             <div class="row-entry">
                 <div class="row">
                 <h3 class="column bullet-point dataName">` + name + `</h3>
-                <p class="column text-right">` + date + `</p>
+                <p class="column text-right" style="height:1.17em;line-height:1.17em;">` + date + `</p>
             </div>
 
             <div class="entry-metadata"></div>
@@ -48,48 +48,23 @@ $.get("entries.json", function(data) {
         var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
         var dates = rowEntry.getElementsByClassName("column text-right")[0];
         var metadata = document.getElementsByClassName("entry-metadata")[i];
-
-        var useHeadlines = false;
-        var useMetaIcons = false;
-        var useIndents = true;
-        var useLinks = true;
-        var useIcons = false;
-        var useStars = false;
-
-        // Ok first we gotta indent it
-
-        if (useIndents && dataPoint.isIndented) {
+        
+        // Indent
+        if (dataPoint.isIndented) {
             rowEntry.style.position = "relative";
-            rowEntry.style.left = "2.5%";
-            rowEntry.style.width = "45%";
+            rowEntry.style.left = "25px";
+            rowEntry.style.width = "calc(50% - 50px)";
         };
 
-        // Add icons
-
-        if (useIcons && dataPoint.icon) {
+        // Add stars
+        if (dataPoint.isStarred) {
             title.innerHTML = `
-        <img style="position:absolute; margin-top:2px;" src="` + dataPoint.icon + `" height=18.72>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img style="position:relative;top:1.5px;right:2px;" src="/assets/star.png" height=18.72>
+        &nbsp;
         ` + title.innerHTML;
-        };
-
-        if (useStars && dataPoint.isStarred) {
-            title.innerHTML = `
-        <img style="position:absolute; margin-top:2px;" src="assets/star.png" height=18.72>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        ` + title.innerHTML;
-        };
-
-        // Add headline (has to come before languages)
-
-        if (useHeadlines && dataPoint.headline) {
-            metadata.innerHTML += `
-            <i>` + users(dataPoint.headline) + `</i><br><br>
-            `;
         };
 
         // Add languages
-
         if (dataPoint.languages) {
             var langCount = Object.keys(dataPoint.languages).length;
 
@@ -115,7 +90,6 @@ $.get("entries.json", function(data) {
         };
 
         // Add platforms
-
         if (dataPoint.platforms) {
             if (dataPoint.languages) { metadata.innerHTML += "<br>" };
             var platformCount = Object.keys(dataPoint.platforms).length;
@@ -136,41 +110,27 @@ $.get("entries.json", function(data) {
         };
 
         // Add links
+        if (dataPoint.links) {
+            for (var key in dataPoint.links) {
+                var linkName = key;
+                var link = dataPoint.links[linkName];
 
-        if (useLinks) {
-            if (dataPoint.links) {
-                for (var key in dataPoint.links) {
-                    var linkName = key;
-                    var link = dataPoint.links[linkName];
+                var a = document.createElement("a");
+                a.innerHTML = users(linkName);
+                a.href = link;
+                a.target = "_blank";
 
-                    var a = document.createElement("a");
-                    a.innerHTML = users(linkName);
-                    a.href = link;
-                    a.target = "_blank";
-
-                    rowEntry.append(a);
-                };
+                rowEntry.append(a);
             };
         };
 
         // Generic metadata
-
         if (dataPoint.isOpenSource) {
             metadata.innerHTML += `
             <br><b>Open-sourced</b>
             `;
         } else if (dataPoint.isOpenSource == false) {
             metadata.innerHTML += "<br><b>Closed-sourced</b>";
-        };
-
-        if (useMetaIcons && dataPoint.latestUpdate) {
-            metadata.innerHTML += `
-            <br>
-            &nbsp;
-            <img style="position:absolute; margin-top:1px;" src="assets/update.png" height=17>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <b>Latest update: </b>` + dataPoint.latestUpdate + `
-            `;
         };
     }
 });

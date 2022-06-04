@@ -20,6 +20,7 @@
         {
             "name": "Umbra",
             "isOpenSource": false,
+            "isStarred": true,
             "date": "August 2021 - present",
             "languages": [
                 "JavaScript",
