@@ -54,3 +54,13 @@ hr {
     font-variant: small-caps;
     font-size: 38px;
 }
+
+#discord { 
+	height: 90px;
+	transition: 300ms ease-in-out;
+    overflow: hidden;
+}
+
+#discord:hover {
+    height: 210px;
+}
