@@ -87,3 +87,16 @@ td {
 .button {
     padding: 10px;
 }
+
+.entry-description {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.entry-metadata {
+    margin-block-end: 1em;
+}
+
+.entry-links {
+    margin-block-start: 1em;
+}

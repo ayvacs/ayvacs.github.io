@@ -3,6 +3,7 @@
         {
             "name": "Crypvault",
             "isOpenSource": true,
+            "isStarred": false,
             "date": "May 2022 - present",
             "languages": [
                 "JavaScript",
@@ -15,7 +16,7 @@
                 "Linux",
                 "and anywhere else you can get a web browser"
             ],
-            "description": "The best open-sourced digital asset manager that keeps your money safe from thieves with extremely secure biometrics, all in your web browser."
+            "description": "An open-sourced digital asset manager which keeps your cryptocurrency safe from thieves with extremely secure biometrics. Runs in your web browser."
         },
         {
             "name": "Umbra",
@@ -42,12 +43,14 @@
         {
             "name": "Umbra External Purchase API",
             "isIndented": true,
+            "isStarred": false,
             "languages": ["Lua"],
             "description": "An external API which allows you to accept purchases from external payment providers without leaving the game. Whenever a user wishes to purchase something, a pop-up window is created, requiring minimal effort from the user."
         },
         {
             "name": "gba.js.org",
             "isOpenSource": true,
+            "isStarred": true,
             "date": "October 2021 - February 2022",
             "languages": ["JavaScript", "HTML"],
             "description": "GBA Online is a light-weight online emulator for the GameBoy Advance that I worked on from October 2021 to February 2022. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
@@ -55,6 +58,12 @@
                 "Web link": "https://gba.js.org",
                 "GitHub source code": "https://github.com/ayvacs/gba.js.org"
             }
+        },
+        {
+            "name": "Roblox Developer Modules",
+            "isStarred": true,
+            "date": "September 2021 - present",
+            "description": "As an official Roblox Developer Modules Quality Assurance provider, I test internal products to prevent mistakes and defects and avoid problems when shipping final products to the platform. I provide confidence that quality requirements will be fulfilled, and prevent unfinished products from reaching the general playerbase. This is an official position at Roblox."
         }
     ],
     "competitions": []

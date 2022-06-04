@@ -46,9 +46,8 @@ $.get("entries.json", function(data) {
 
         var rowEntry = document.getElementsByClassName("row-entry")[i];
         var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
-        var dates = rowEntry.getElementsByClassName("column text-right")[0];
         var metadata = document.getElementsByClassName("entry-metadata")[i];
-        
+
         // Indent
         if (dataPoint.isIndented) {
             rowEntry.style.position = "relative";
@@ -111,6 +110,8 @@ $.get("entries.json", function(data) {
 
         // Add links
         if (dataPoint.links) {
+            rowEntry.append(document.createElement("br"));
+
             for (var key in dataPoint.links) {
                 var linkName = key;
                 var link = dataPoint.links[linkName];
@@ -132,5 +133,10 @@ $.get("entries.json", function(data) {
         } else if (dataPoint.isOpenSource == false) {
             metadata.innerHTML += "<br><b>Closed-sourced</b>";
         };
-    }
+
+        // remove metadata div if it wasn't used
+        if (metadata.childNodes.length == 0) {
+            metadata.remove()
+        };
+    };
 });
