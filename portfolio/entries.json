@@ -1,0 +1,60 @@
+{
+    "projects": [
+        {
+            "name": "Crypvault",
+            "isOpenSource": true,
+            "date": "May 2022 - present",
+            "languages": [
+                "JavaScript",
+                "HTML",
+                "CSS"
+            ],
+            "platforms": [
+                "Windows",
+                "macOS",
+                "Linux",
+                "and anywhere else you can get a web browser"
+            ],
+            "description": "The best open-sourced digital asset manager that keeps your money safe from thieves with extremely secure biometrics, all in your web browser."
+        },
+        {
+            "name": "Umbra",
+            "isOpenSource": false,
+            "date": "August 2021 - present",
+            "languages": [
+                "JavaScript",
+                "Lua"
+            ],
+            "platforms": [
+                "Windows",
+                "macOS",
+                "Linux",
+                "iOS"
+            ],
+            "description": "A powerful scripting API and artificial neural network application which allows you to deobfuscate and modify internal engine code, and publish your changes on the fly. Above all else, we're a community that stands for free speech and a free Internet for all. Serving ≈{bUsers} premium users and ≈{bDkUsers} developers (and counting).",
+            "links": {
+                "License inquiries": "https://ave.is-a.dev/go/discord",
+                "Developer docs (under construction)": "https://ave.is-a.dev/umbra-docs/",
+                "Landing page (under construction)": "https://ave.is-a.dev/umbra"
+            }
+        },
+        {
+            "name": "Umbra External Purchase API",
+            "isIndented": true,
+            "languages": ["Lua"],
+            "description": "An external API which allows you to accept purchases from external payment providers without leaving the game. Whenever a user wishes to purchase something, a pop-up window is created, requiring minimal effort from the user."
+        },
+        {
+            "name": "gba.js.org",
+            "isOpenSource": true,
+            "date": "October 2021 - February 2022",
+            "languages": ["JavaScript", "HTML"],
+            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance that I worked on from October 2021 to February 2022. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
+            "links": {
+                "Web link": "https://gba.js.org",
+                "GitHub source code": "https://github.com/ayvacs/gba.js.org"
+            }
+        }
+    ],
+    "competitions": []
+}

@@ -1,12 +1,12 @@
 // Functions
-function b(i) {
-    // Replaces i with the current Brigadier user count.
-    return i.replace("{bUsers}", "18,000")
-        .replace("{bDkUsers}", "7,500");
+function users(i) {
+    // Replaces i with the current Umbra user count.
+    return i.replace("{bUsers}", "30,000")
+        .replace("{bDkUsers}", "4,500");
 };
 
 
-$.get("assets/entries.json", function(data) {
+$.get("entries.json", function(data) {
     // Initialize Projects
     var projects = data.projects;
     var dataLength = projects.length;
@@ -19,8 +19,13 @@ $.get("assets/entries.json", function(data) {
         console.log("Built element " + n + "/" + dataLength);
 
         var name = dataPoint.name;
-        var date = dataPoint.date;
         var desc = dataPoint.description;
+
+        if (dataPoint.date) {
+            var date = dataPoint.date;
+        } else {
+            var date = "";
+        };
 
         // Add nameDetails
         if (dataPoint.nameDetails) {
@@ -35,7 +40,7 @@ $.get("assets/entries.json", function(data) {
             </div>
 
             <div class="entry-metadata"></div>
-                <p class="entry-description">` + b(desc) + `</p>
+                <p class="entry-description">` + users(desc) + `</p>
             </div>
         `);
 
@@ -46,14 +51,14 @@ $.get("assets/entries.json", function(data) {
 
         var useHeadlines = false;
         var useMetaIcons = false;
-        var useIndents = false;
+        var useIndents = true;
         var useLinks = true;
         var useIcons = false;
         var useStars = false;
 
         // Ok first we gotta indent it
 
-        if (useIndents && dataPoint.isSub) {
+        if (useIndents && dataPoint.isIndented) {
             rowEntry.style.position = "relative";
             rowEntry.style.left = "2.5%";
             rowEntry.style.width = "45%";
@@ -79,7 +84,7 @@ $.get("assets/entries.json", function(data) {
 
         if (useHeadlines && dataPoint.headline) {
             metadata.innerHTML += `
-            <i>` + b(dataPoint.headline) + `</i><br><br>
+            <i>` + users(dataPoint.headline) + `</i><br><br>
             `;
         };
 
@@ -87,8 +92,14 @@ $.get("assets/entries.json", function(data) {
 
         if (dataPoint.languages) {
             var langCount = Object.keys(dataPoint.languages).length;
+
             if (langCount !== 0) {
-                metadata.innerHTML += "<b>Languages:</b> ";
+                if (langCount == 1) {
+                    metadata.innerHTML += "<b>Language:</b> ";
+                } else {
+                    metadata.innerHTML += "<b>Languages:</b> ";
+                };
+                
                 var langN = 0; // Counter variable
                 for (var l = 0; l < langCount; l++) {
                     langN++;
@@ -133,7 +144,7 @@ $.get("assets/entries.json", function(data) {
                     var link = dataPoint.links[linkName];
 
                     var a = document.createElement("a");
-                    a.innerHTML = b(linkName);
+                    a.innerHTML = users(linkName);
                     a.href = link;
                     a.target = "_blank";
 
@@ -144,20 +155,11 @@ $.get("assets/entries.json", function(data) {
 
         // Generic metadata
 
-        if (useMetaIcons && dataPoint.isOpenSource) {
+        if (dataPoint.isOpenSource) {
             metadata.innerHTML += `
-            <br>
-            &nbsp;
-            <img style="position:absolute; margin-top:1px;" src="assets/github.png" height=17>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <b>Open-sourced</b>
+            <br><b>Open-sourced</b>
             `;
-        } else if (dataPoint.isOpenSource) {
-            metadata.innerHTML += `
-            <br>
-            <b>Open-sourced</b>
-            `;
-        } else {
+        } else if (dataPoint.isOpenSource == false) {
             metadata.innerHTML += "<br><b>Closed-sourced</b>";
         };
 
