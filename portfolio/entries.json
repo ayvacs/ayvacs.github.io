@@ -5,17 +5,9 @@
             "isOpenSource": true,
             "isStarred": false,
             "date": "May 2022 - present",
-            "languages": [
-                "JavaScript",
-                "HTML",
-                "CSS"
-            ],
-            "platforms": [
-                "Windows",
-                "macOS",
-                "Linux",
-                "and anywhere else you can get a web browser"
-            ],
+            "position": "Lead Developer",
+            "languages": ["JavaScript", "HTML", "CSS"],
+            "platforms": ["Windows", "macOS", "Linux", "and anywhere else you can get a web browser"],
             "description": "An open-sourced digital asset manager which keeps your cryptocurrency safe from thieves with extremely secure biometrics. Runs in your web browser."
         },
         {
@@ -23,17 +15,10 @@
             "isOpenSource": false,
             "isStarred": true,
             "date": "August 2021 - present",
-            "languages": [
-                "JavaScript",
-                "Lua"
-            ],
-            "platforms": [
-                "Windows",
-                "macOS",
-                "Linux",
-                "iOS"
-            ],
-            "description": "A powerful scripting API and artificial neural network application which allows you to deobfuscate and modify internal engine code, and publish your changes on the fly. Above all else, we're a community that stands for free speech and a free Internet for all. Serving ≈{bUsers} premium users and ≈{bDkUsers} developers (and counting).",
+            "position": "Lead Developer + Team Lead",
+            "languages": ["JavaScript", "Lua"],
+            "platforms": ["Windows", "macOS", "Linux", "iOS"],
+            "description": "A powerful scripting API and artificial neural network application which allows you to deobfuscate and modify internal Roblox engine code, update any read-only values you wish to, and publish your changes on the fly. Above all else, we're a community that stands for free speech and a free Internet for all. Serving ≈{bUsers} premium users and ≈{bDkUsers} developers (and counting).",
             "links": {
                 "License inquiries": "https://ave.is-a.dev/go/discord",
                 "Developer docs (under construction)": "https://ave.is-a.dev/umbra-docs/",
@@ -41,29 +26,46 @@
             }
         },
         {
+            "name": "Umbra Cloud",
+            "isOpenSource": true,
+            "isIndented": true,
+            "isStarred": true,
+            "languages": ["Lua", "JavaScript", "Java", "Ruby"],
+            "description": "The open-source, self-scaling cloud hosting platform that we use to publish user-generated content created on the Umbra development platform. Umbra Cloud's infrastructure is open source and freely available to everyone."
+        },
+        {
+            "name": "Umbra Launchpad",
+            "isIndented": true,
+            "isStarred": false,
+            "languages": ["Lua"],
+            "description": "The custom Umbra launcher platform which allows it to run undetected, making it impossible to be spotted by other players, in-game moderators, and even Roblox's own administrators. The hub to manage your account and any scripts that you've uploaded using Umbra Cloud, our free cloud hosting platform."
+        },
+        {
             "name": "Umbra External Purchase API",
             "isIndented": true,
             "isStarred": false,
             "languages": ["Lua"],
-            "description": "An external API which allows you to accept purchases from external payment providers without leaving the game. Whenever a user wishes to purchase something, a pop-up window is created, requiring minimal effort from the user."
+            "description": "An API which allows you to accept in-script purchases from external payment providers - namely Square, Google Pay (and Apple Pay on macOS) - without leaving the game. Whenever a user wishes to purchase something, a pop-up window is created, requiring minimal effort from the user. This is impossible in vanilla Roblox."
+        },
+        {
+            "name": "Official Roblox Quality Assurance",
+            "isStarred": true,
+            "date": "September 2021 - present",
+            "position": "Quality Assurance",
+            "description": "As an official Roblox Developer Modules Quality Assurance provider, I work closely with the Roblox Team, testing internal products to prevent mistakes and defects and avoid problems when shipping final products to the platform. I provide confidence that quality requirements will be fulfilled, and prevent unfinished products from reaching the general playerbase."
         },
         {
             "name": "gba.js.org",
             "isOpenSource": true,
             "isStarred": true,
             "date": "October 2021 - February 2022",
+            "position": "Lead Developer",
             "languages": ["JavaScript", "HTML"],
             "description": "GBA Online is a light-weight online emulator for the GameBoy Advance that I worked on from October 2021 to February 2022. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org.</a>",
             "links": {
                 "Web link": "https://gba.js.org",
                 "GitHub source code": "https://github.com/ayvacs/gba.js.org"
             }
-        },
-        {
-            "name": "Roblox Developer Modules",
-            "isStarred": true,
-            "date": "September 2021 - present",
-            "description": "As an official Roblox Developer Modules Quality Assurance provider, I test internal products to prevent mistakes and defects and avoid problems when shipping final products to the platform. I provide confidence that quality requirements will be fulfilled, and prevent unfinished products from reaching the general playerbase. This is an official position at Roblox."
         }
     ],
     "competitions": []

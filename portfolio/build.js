@@ -12,8 +12,10 @@ $.get("entries.json", function(data) {
     var dataLength = projects.length;
 
     var n = 0; // Counter variable
+    var m = -1; // Metadata Counter variable
     for (var i = 0; i < dataLength; i++) {
         n++;
+        m++;
         var dataPoint = projects[i];
 
         console.log("Built element " + n + "/" + dataLength);
@@ -46,7 +48,7 @@ $.get("entries.json", function(data) {
 
         var rowEntry = document.getElementsByClassName("row-entry")[i];
         var title = rowEntry.getElementsByClassName("column bullet-point dataName")[0];
-        var metadata = document.getElementsByClassName("entry-metadata")[i];
+        var metadata = document.getElementsByClassName("entry-metadata")[m];
 
         // Indent
         if (dataPoint.isIndented) {
@@ -61,6 +63,11 @@ $.get("entries.json", function(data) {
         <img style="position:relative;top:1.5px;right:2px;" src="/assets/star.png" height=18.72>
         &nbsp;
         ` + title.innerHTML;
+        };
+
+        // Add position
+        if (dataPoint.position) {
+            metadata.innerHTML += `<b>Position:</b> ${dataPoint.position}<br>`;
         };
 
         // Add languages
@@ -128,15 +135,17 @@ $.get("entries.json", function(data) {
         // Generic metadata
         if (dataPoint.isOpenSource) {
             metadata.innerHTML += `
-            <br><b>Open-sourced</b>
+            <br><b>Open source</b>
             `;
         } else if (dataPoint.isOpenSource == false) {
-            metadata.innerHTML += "<br><b>Closed-sourced</b>";
+            metadata.innerHTML += "<br><b>Closed source</b>";
         };
 
         // remove metadata div if it wasn't used
         if (metadata.childNodes.length == 0) {
-            metadata.remove()
+            metadata.remove();
+            metadata = null;
+            m -= 1;
         };
     };
 });
