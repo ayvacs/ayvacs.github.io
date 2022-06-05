@@ -34,10 +34,17 @@ $.get("entries.json", function(data) {
             name += "&nbsp;<span style=\"font-weight:normal;font-style:italic;font-size:0.8em\">" + dataPoint.nameDetails + "</span>"
         };
 
+        // Add stars
+        if (dataPoint.isStarred) {
+            var extraClass = " goldGradient";
+        } else {
+            var extraClass = "";
+        };
+
         $("#proj").append(`
             <div class="row-entry">
                 <div class="row">
-                <h3 class="column bullet-point dataName">` + name + `</h3>
+                <h3 class="column bullet-point dataName${extraClass}">` + name + `</h3>
                 <p class="column text-right" style="position:relative;top:5px;">` + date + `</p>
             </div>
 
@@ -55,14 +62,6 @@ $.get("entries.json", function(data) {
             rowEntry.style.position = "relative";
             rowEntry.style.left = "25px";
             rowEntry.style.width = "calc(50% - 50px)";
-        };
-
-        // Add stars
-        if (dataPoint.isStarred) {
-            title.innerHTML = `
-        <img style="position:relative;top:1.5px;right:2px;" src="/assets/star.png" height=18.72>
-        &nbsp;
-        ` + title.innerHTML;
         };
 
         // Add position

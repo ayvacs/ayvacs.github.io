@@ -104,3 +104,17 @@ td {
 .entry-description > a {
     display: inline-block;
 }
+
+.goldGradient {
+    background: linear-gradient(
+        -45deg,
+        #be7d13 0%,
+        #bda34c 25%,
+        #be7d13 50%,
+        #bda34c 75%,
+        #be7d13 100%
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
