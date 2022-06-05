@@ -70,10 +70,30 @@ $.get("entries.json", function(data) {
             metadata.innerHTML += `<b>Position:</b> ${dataPoint.position}<br>`;
         };
 
+        // Add skills
+        if (dataPoint.skills) {
+            var skillCount = Object.keys(dataPoint.skills).length;
+            if (skillCount !== 0) {
+                metadata.innerHTML += "<b>Skills:</b> ";
+                var skilN = 0; // Counter variable
+                for (var s = 0; s < skillCount; s++) {
+                    skilN++;
+                    var skil = dataPoint.skills[s];
+
+                    if (skilN == skillCount) {
+                        metadata.innerHTML += skil;
+                    } else {
+                        metadata.innerHTML += skil + ", ";
+                    };
+                };
+            };
+        };
+
         // Add languages
         if (dataPoint.languages) {
-            var langCount = Object.keys(dataPoint.languages).length;
+            if (dataPoint.skills) { metadata.innerHTML += "<br>"; };
 
+            var langCount = Object.keys(dataPoint.languages).length;
             if (langCount !== 0) {
                 if (langCount == 1) {
                     metadata.innerHTML += "<b>Language:</b> ";
@@ -97,7 +117,8 @@ $.get("entries.json", function(data) {
 
         // Add platforms
         if (dataPoint.platforms) {
-            if (dataPoint.languages) { metadata.innerHTML += "<br>" };
+            if (dataPoint.skills || dataPoint.languages) { metadata.innerHTML += "<br>"; };
+            
             var platformCount = Object.keys(dataPoint.platforms).length;
             if (platformCount !== 0) {
                 metadata.innerHTML += "<b>Platforms:</b> ";
