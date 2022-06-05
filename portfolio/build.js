@@ -38,7 +38,7 @@ $.get("entries.json", function(data) {
             <div class="row-entry">
                 <div class="row">
                 <h3 class="column bullet-point dataName">` + name + `</h3>
-                <p class="column text-right" style="height:1.17em;line-height:1.17em;">` + date + `</p>
+                <p class="column text-right" style="position:relative;top:5px;">` + date + `</p>
             </div>
 
             <div class="entry-metadata"></div>

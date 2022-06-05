@@ -100,3 +100,7 @@ td {
 .entry-links {
     margin-block-start: 1em;
 }
+
+.entry-description > a {
+    display: inline-block;
+}
