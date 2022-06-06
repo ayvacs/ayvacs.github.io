@@ -38,9 +38,9 @@
             "languages": ["Lua", "JavaScript", "Java", "Ruby"],
             "skills": ["Scripting", "API Creation", "Security", "Protection", "Account Systems", "Quality Assurance", "UI"],
             "platforms": ["Windows", "macOS", "Linux", "iOS"],
-            "description": "A powerful scripting API and artificial neural network application which allows you to deobfuscate and modify internal Roblox engine code, update any typically restricted values you wish to, and publish your changes on the fly. Above all else, we're a community that stands for free speech and a free Internet for all. Serving ≈{bUsers} premium users and ≈{bDkUsers} developers (and counting).",
+            "description": "A powerful scripting API and artificial neural network application which allows you to deobfuscate and modify internal Roblox engine code, update any typically restricted values you wish to, and publish your changes on the fly. Above all else, we're a community that stands for free speech and for a free Internet for all. Serving ≈{bUsers} premium users and ≈{bDkUsers} developers (and counting).",
             "links": {
-                "License inquiries": "https://ave.is-a.dev/go/discord",
+                "[$17] License inquiries": "https://ave.is-a.dev/go/discord",
                 "Developer docs (under construction)": "https://ave.is-a.dev/umbra-docs/",
                 "Landing page (under construction)": "https://ave.is-a.dev/umbra"
             }
@@ -60,7 +60,7 @@
             "isStarred": false,
             "languages": ["Lua"],
             "skills": ["Scripting", "API Creation", "Security", "Account Systems", "Quality Assurance", "UI"],
-            "description": "The custom Umbra launcher platform which allows it to run undetected, making it impossible to be spotted by other players, in-game moderators, and even Roblox's own administrators. The hub to manage your account and any scripts that you've uploaded using Umbra Cloud, our free cloud hosting platform."
+            "description": "I created and actively develop the custom Umbra launcher platform which allows Umbra to run undetected, making it impossible to be spotted by other players, in-game moderators, and even Roblox's own administrators. It also serves as the hub to manage your account and any scripts that you've uploaded using Umbra Cloud, our free cloud hosting platform."
         },
         {
             "name": "Umbra External Purchase API",

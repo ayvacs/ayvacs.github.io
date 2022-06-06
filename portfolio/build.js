@@ -44,7 +44,7 @@ $.get("entries.json", function(data) {
         $("#proj").append(`
             <div class="row-entry">
                 <div class="row">
-                <h3 class="column bullet-point dataName${extraClass}">` + name + `</h3>
+                <h3 class="column bullet-point dataName${extraClass}" style="position:relative;right:49px;">` + name + `</h3>
                 <p class="column text-right" style="position:relative;top:5px;">` + date + `</p>
             </div>
 
@@ -60,8 +60,8 @@ $.get("entries.json", function(data) {
         // Indent
         if (dataPoint.isIndented) {
             rowEntry.style.position = "relative";
-            rowEntry.style.left = "25px";
-            rowEntry.style.width = "calc(50% - 50px)";
+            rowEntry.style.left = "4%";
+            rowEntry.style.width = "46%";
         };
 
         // Add position
