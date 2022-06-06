@@ -8,7 +8,7 @@
             "position": "Team Lead",
             "languages": ["JavaScript", "Ruby"],
             "skills": ["Community Management", "Team Management", "Quality Assurance", "Security"],
-            "description": "The most secure ADC & DDoS mitigation service available online, that the Umbra team created to protect our servers. It serves about 4.1 billion requests monthly, and is currently active on 4 domains and 82 services with 99.98% uptime. As Team Lead of the project, I oversee developers and the development team to ensure the effectiveness and quality of the service. I additionally manage the hiring of new talented developers for the project, and the front-end of the service itself.<br><br>In June, Nova protected our service against a DDoS attack of 2.4 Gbps of HTTP traffic (≈2 million HTTP requests per second) with zero damage to other site visitors.<br><br>Nova is currently in closed beta. If you own a site with <1000 regular users and wish to participate in the beta, we will be happy to protect your site for free for two weeks and allow you to experience how amazing our service is, and only then will we provide you with a quota. Please get in <a href=\"https://ave.is-a.dev/go/discord\">contact</a>."
+            "description": "Nova is the most secure ADC & DDoS mitigation service available online, created by myself and the Umbra team to protect our servers. It serves about 4.1 billion requests monthly, and is currently active on 42 domains and 82 total services with 99.98% uptime. As Team Lead of the project, I ensure the effectiveness and quality of the service by overseeing (1) the development team, (2) the hiring of new talented developers, and (3) the front-end of the service itself.<br><br><b>Impact:</b> In June, Nova protected our service against a DDoS attack of 2.4 Gbps of HTTP traffic (≈2 million HTTP requests per second). Normal site visitors were unaffected, and damage to the servers themselves was completely avoided.<br><br><b>Join us:</b> Nova is currently in closed beta. If you own a site with <1000 regular users and wish to participate in the beta, we will be happy to protect your site for free for two weeks and allow you to experience how amazing our service is, and only then will we provide you with a quota. Please get in <a href=\"https://ave.is-a.dev/go/discord\">contact</a>."
         },
         {
             "name": "Crypvault",
@@ -19,7 +19,7 @@
             "languages": ["JavaScript", "HTML", "CSS"],
             "skills": ["Scripting", "Community Management", "Team Management", "UI"],
             "platforms": ["Windows", "macOS", "Linux", "and anywhere else you can get a web browser"],
-            "description": "An open-sourced digital asset manager which keeps your cryptocurrency safe from thieves with extremely secure biometrics. Runs in your web browser."
+            "description": "An open-sourced digital asset manager which keeps your cryptocurrencies safe from thieves via extremely secure biometrics. Runs in your web browser."
         },
         {
             "name": "Quality Assurance @ Roblox",
@@ -78,7 +78,7 @@
             "position": "Lead Developer",
             "languages": ["JavaScript", "HTML"],
             "skills": ["Scripting", "Emulation", "UI"],
-            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance with a large variety of features. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org</a>.",
+            "description": "GBA Online is a light-weight online emulator for the GameBoy Advance. It's hosted online at <a href=\"https://gba.js.org/\">gba.js.org</a>.",
             "links": {
                 "Web link": "https://gba.js.org",
                 "GitHub source code": "https://github.com/ayvacs/gba.js.org"
