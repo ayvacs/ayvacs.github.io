@@ -55,13 +55,13 @@ hr {
     font-size: 38px;
 }
 
-#discord { 
+.discord { 
 	height: 90px;
 	transition: 300ms ease-in-out;
     overflow: hidden;
 }
 
-#discord:hover {
+.discord:hover {
     height: 210px;
 }
 
