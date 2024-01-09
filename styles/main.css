@@ -59,3 +59,14 @@ h1 {
     color: white;
     text-decoration: none;
 }
+
+#wordmark {
+    position: absolute;
+    right: 150px;
+    bottom: 70px;
+}
+
+#content-main {
+    padding-left: 40px;
+    padding-right: 40px;
+}
