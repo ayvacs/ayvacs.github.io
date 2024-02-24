@@ -27,6 +27,8 @@ h1 {
 
 ul {
     list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' stroke='white' width='6' height='6' viewBox><circle r='0.5' /></svg>");
+    margin: 1em 0 1em 1.25em;
+    padding-left: 1.25em;
 }
 
 li {
@@ -39,9 +41,7 @@ li {
 }
 
 .center > * {
-    padding: 64px;
-    padding-top: 16px;
-    padding-bottom: 0;
+    padding: 16px 0 0 0;
 }
 
 
