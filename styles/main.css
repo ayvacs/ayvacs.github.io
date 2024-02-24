@@ -17,6 +17,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
 h1 {
@@ -24,21 +25,14 @@ h1 {
 }
 
 .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    height: 100%;
+    width: calc(60% - 64px);
+    margin: auto auto;
 }
 
 .center > * {
-    text-align: center;
+    padding: 64px;
+    padding-top: 16px;
+    padding-bottom: 0;
 }
 
 
@@ -69,4 +63,8 @@ h1 {
 #content-main {
     padding-left: 40px;
     padding-right: 40px;
+}
+
+a, a:visited {
+    color: rgb(189, 55, 201)
 }
