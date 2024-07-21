@@ -50,7 +50,7 @@ body {
     padding: 0;
 }
 
-#nvim_btm * * {
+#nvim_btm div span {
     display: inline-block;
     padding: 4px 12px 4px 12px;
     color: #5e689f;
