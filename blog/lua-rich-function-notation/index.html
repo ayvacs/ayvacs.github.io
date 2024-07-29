@@ -42,7 +42,15 @@ local myButton = newButton {
 end
 </code></pre>
 <p>We can see the definition of the initial function that takes in a <code>ClassName</code>, which returns a second function with the properties table as a parameter.</p>
-<p>This was a technique I made use of in my <a href="https://github.com/ayvacs/Proton">Proton UI library</a> to allow for easily human-readable generation of UI instances in the Roblox platform. You can view the full source code of the <code>new</code> function <a href="https://github.com/ayvacs/Proton/blob/main/src/Proton/modules/new.luau">here</a>!</p>
+<p>This was a technique I made use of in my <a href="https://github.com/ayvacs/Proton">Proton UI library</a> to allow for easily human-readable generation of UI instances in the Roblox platform. I made use of this technique once more, with the &quot;onEvent&quot; expression...</p>
+<pre><code class="language-lua">local btn = new &quot;TextButton&quot; {
+    [onEvent &quot;MouseButton1Click&quot;] = function()
+      print(&quot;Left mouse button clicked!&quot;)
+    end
+}
+</code></pre>
+<p>In reality, &quot;onEvent&quot; is simply a <em>function</em> that appends an asterisk to the string parameter. So, <code>onEvent &quot;foo&quot;</code> is equal to <code>*foo</code>. This lets the Proton compiler know that we want to attach the function <code>*foo</code> to the event <code>foo</code>. It's super readable easy to understand, and it's all written in vanilla Lua!</p>
+<p>You can view the full source code of the <code>new</code> function <a href="https://github.com/ayvacs/Proton/blob/main/src/Proton/modules/new.luau">here</a>!</p>
 
         <hr>
         <p id="copyright" style="color:gray;">&copy; 2024 ayvacs. all rights reserved.</p>
