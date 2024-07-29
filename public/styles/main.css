@@ -32,8 +32,6 @@ body {
     width: 500px;
 
     padding: 0;
-
-    border: 3px solid green;
 }
 
 #nvim_btm {
@@ -87,26 +85,23 @@ body {
     background-repeat: repeat-y;
 }
 
-#posts_list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0;
-}
-
-#posts_list * {
-    width: 100%;
-}
-
-#posts_list li * {
-    display: inline;
-}
-
-.align_left {
+.post_title,
+.post_title:active {
+    float: left;
     text-align: left;
+    color: #5e689f;
 }
 
-.align_right {
+.post_date {
+    float: right;
     text-align: right;
+    margin: 0;
+    padding: 0;
+    color: #5e689f;
+}
+
+#posts_list {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
 }
