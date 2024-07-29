@@ -35,3 +35,14 @@ code:not(pre code) {
     border-radius: 4px;
     overflow: auto;
 }
+
+
+#date,
+#copyright,
+#view-source {
+    color: gray;
+}
+
+#header a {
+    color: white;
+}
