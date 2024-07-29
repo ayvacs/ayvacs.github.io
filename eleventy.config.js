@@ -24,6 +24,10 @@ module.exports = function (eleventyConfig) {
         });
     });
 
+    eleventyConfig.addFilter("year", (dateString) => {
+        return "" + new Date(dateString).getFullYear();
+    });
+
     return {
         "dir": {
             "includes": "../includes",

@@ -14,11 +14,22 @@
         <hr>
         {{ content | safe }}
         <hr>
-        <p id="copyright" style="color:gray;">&copy;</p>
-        <script>
-            document.getElementById("copyright").textContent += ` ${new Date().getFullYear()} ayvacs. all rights reserved.`
-        </script>
+        <p id="copyright" style="color:gray;">&copy; {{ date | year }} ayvacs. all rights reserved.</p>
     </div>
+
+    <!-- Add hightlight.js syntax highlighting for codeblocks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+        /* hljs override styles */
+        .hljs {
+            background: none;
+        }
+        pre code.hljs {
+            padding: 0;
+        }
+    </style>
 </body>
 
 </html>
