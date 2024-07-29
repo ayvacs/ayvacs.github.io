@@ -1,8 +1,5 @@
 name: Eleventy Build
 
-permissions:
-  contents: write
-
 
 on:
   push:
@@ -13,6 +10,8 @@ on:
       
 jobs:
   deploy:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v2
@@ -29,4 +28,4 @@ jobs:
         - name: Deploy
           uses: peaceiris/actions-gh-pages@v3
           with:
-            deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+            github_token: ${{ secrets.GITHUB_TOKEN }}
