@@ -1,0 +1,18 @@
+{
+    "author": "ayvacs",
+    "private": true,
+    "scripts": {
+        "clear_dist": "rimraf dist && mkdir dist",
+        "copy_dirs": "copyfiles -u 1 public/**/*.* dist",
+        "copy_html": "copyfiles -u 1 public/**/*.html dist",
+        "preserve": "npm run clear_dist && npm run copy_dirs && npm run copy_html",
+        "serve": "npx @11ty/eleventy --serve",
+        "prebuild": "npm run clear_dist && npm run copy_dirs && npm run copy_html",
+        "build": "npx @11ty/eleventy"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "copyfiles": "^2.4.1",
+        "rimraf": "^6.0.1"
+    }
+}
