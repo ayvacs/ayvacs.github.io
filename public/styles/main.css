@@ -29,7 +29,7 @@ body {
 #nvim_main {
     text-align: center;
     margin: auto;
-    width: 250px;
+    width: 500px;
 
     padding: 0;
 
@@ -85,4 +85,28 @@ body {
 .tilde {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='10' height='20'><text x='0' y='16' fill='%23C6D1F1' font-family='CommitMono'>~</text></svg>");
     background-repeat: repeat-y;
+}
+
+#posts_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+#posts_list * {
+    width: 100%;
+}
+
+#posts_list li * {
+    display: inline;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.align_right {
+    text-align: right;
 }

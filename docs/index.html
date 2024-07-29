@@ -10,7 +10,14 @@
     <div id="nvim_main">
         <b>AYVACS</b>
         <p>tagline</p>
-        <div id="posts_list"></div>
+        <ul id="posts_list">
+            {% for post in collections.post %}
+            <li>
+                <a class="align_left" href="{{ post.url }}">{{ post.data.title }}</a>
+                <p class="align_right">{{ post.page.date | readableDate }}</p>
+            </li>
+            {% endfor %}
+        </ul>
     </div>
     <footer id="nvim_btm">
         <div id="nvim_btm_section1">

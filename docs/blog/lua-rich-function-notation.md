@@ -2,6 +2,8 @@
 layout: blog.njk
 title: lua rich function notation
 date: 2024-07-28
+tags:
+    - post
 ---
 
 # {{ title }}
