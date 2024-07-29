@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles/colours.css">
+    <style>
+        #blog_main {
+            width: 35%;
+            margin: auto;
+        }
+
+        p, h1 {
+            color: white;
+        }
+
+        h2, h3, h4, h5, h6 {
+            color: #5e689f;
+        }
+
+        hr {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="blog_main">
+        <h3>AYVACS <a style="color:white;" href="../../">home</a></h3>
+        <p style="color:gray;">Jul 28, 2024</p>
+        <h1>lua rich function notation</h1>
+        <hr>
+        <pre><code class="language-lua">local myButton = new &quot;TextButton&quot; {
+    [&quot;Size&quot;] = UDim2.new(0, 250, 0, 100),
+    [&quot;Text&quot;] = &quot;Click me to do something cool&quot;,
+    [&quot;*MouseButton1Click&quot;] = (function()
+        print(&quot;Left mouse button clicked!&quot;)
+    end)
+}
+</code></pre>
+<p>The above script might look a bit odd for a Lua function. After all, there are no parentheses or commas used in the <code>new</code> function, yet somehow both a string and table are being passed as arguments to it.</p>
+<p>However, this notation only makes use of vanilla Lua features and runs as expected, with no errors... so how does it work?</p>
+<p>This has to do with the fact that in Lua you can actually call a function that takes a string or table <em>without parentheses</em>.</p>
+<p>Under the hood, two functions are actually being ran; <code>new</code> and the function that <code>new</code> returns. So the following code block produces identical results to the first:</p>
+<pre><code class="language-lua">local newButton = new &quot;TextButton&quot;
+
+local myButton = newButton {
+    [&quot;Size&quot;] = UDim2.new(0, 250, 0, 100),
+    [&quot;Text&quot;] = &quot;Click me to do something cool&quot;,
+    [&quot;*MouseButton1Click&quot;] = (function()
+        print(&quot;Left mouse button clicked!&quot;)
+    end)
+}
+</code></pre>
+<p>The source for the <code>new.lua</code> ModuleScript looks a little something like this:</p>
+<pre><code class="language-lua">return function(className)
+    return function(properties)
+        -- ...
+    end
+end
+</code></pre>
+<p>We can see the definition of the initial function that takes in a <code>ClassName</code>, which returns a second function with the properties table as a parameter.</p>
+<p>This was a technique I made use of in my <a href="https://github.com/ayvacs/Proton">Proton UI library</a> to allow for easily human-readable generation of UI instances in the Roblox platform. You can view the full source code of the <code>new</code> function <a href="https://github.com/ayvacs/Proton/blob/main/src/Proton/modules/new.luau">here</a>!</p>
+
+        <hr>
+        <p id="copyright" style="color:gray;">&copy;</p>
+        <script>
+            document.getElementById("copyright").textContent += ` ${new Date().getFullYear()} ayvacs. all rights reserved.`
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/colours.css">
+</head>
+
+
+<body class="tilde">
+    <div id="nvim_main">
+        <b>AYVACS</b>
+        <p>software developer, for hire</p>
+        <table id="posts_list">
+            
+            <tr>
+                <td><a class="post_title" target="_blank" href="/blog/lua-rich-function-notation/">lua rich function notation</a></td>
+                <td><p class="post_date">2024-07-28</p></td>
+            </tr>
+            
+        </table>
+    </div>
+    <footer id="nvim_btm">
+        <div id="nvim_btm_section1">
+            <span id="nvim_btm_item1">NORMAL</span><!--
+         --><span id="nvim_btm_item2">main</span><!--
+         --><span id="nvim_btm_item3">https://ave.is-a.dev/index.html</span>
+            <script>
+                // Change label upon URL change
+                const change = () => { document.getElementById("nvim_btm_item3").textContent = window.location.href };
+
+                change();
+                window.addEventListener("popstate", change);
+            </script>
+        </div><!--
+     --><div id="nvim_btm_section2">
+            <span id="nvim_btm_item4"><a href="https://github.com/ayvacs">github</a></span><!--
+         --><span id="nvim_btm_item5"><a href="#contact">contact</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
