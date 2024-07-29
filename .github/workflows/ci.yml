@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - master
+  # allows this workflow to be ran manually, from the Actions tab
+  workflow_dispatch:
       
 jobs:
   deploy:
