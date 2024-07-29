@@ -3,25 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="/styles/colours.css">
-    <style>
-        #blog_main {
-            width: 35%;
-            margin: auto;
-        }
-
-        p, h1 {
-            color: white;
-        }
-
-        h2, h3, h4, h5, h6 {
-            color: #5e689f;
-        }
-
-        hr {
-            margin-top: 24px;
-            margin-bottom: 24px;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles/blogpost.css">
 </head>
 
 <body>
@@ -63,11 +45,22 @@ end
 <p>This was a technique I made use of in my <a href="https://github.com/ayvacs/Proton">Proton UI library</a> to allow for easily human-readable generation of UI instances in the Roblox platform. You can view the full source code of the <code>new</code> function <a href="https://github.com/ayvacs/Proton/blob/main/src/Proton/modules/new.luau">here</a>!</p>
 
         <hr>
-        <p id="copyright" style="color:gray;">&copy;</p>
-        <script>
-            document.getElementById("copyright").textContent += ` ${new Date().getFullYear()} ayvacs. all rights reserved.`
-        </script>
+        <p id="copyright" style="color:gray;">&copy; 2024 ayvacs. all rights reserved.</p>
     </div>
+
+    <!-- Add hightlight.js syntax highlighting for codeblocks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+        /* hljs override styles */
+        .hljs {
+            background: none;
+        }
+        pre code.hljs {
+            padding: 0;
+        }
+    </style>
 </body>
 
 </html>
