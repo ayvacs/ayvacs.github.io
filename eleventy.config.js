@@ -3,17 +3,25 @@
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("readableDate", (dateString) => {
-        const date = new Date(dateString);
+        var d = new Date(dateString),
+            month = "" + (d.getMonth() + 1),
+            day = "" + d.getDate(),
+            year = d.getFullYear();
 
-        let month = date.getMonth().toString();
-        if (month.length == 1)
-            month = "0" + month;
+        if (month.length < 2) 
+            month = '0' + month;
+        if (day.length < 2) 
+            day = '0' + day;
 
-        let day = date.getDate().toString();
-        if (day.length == 1)
-            day = "0" + day;
+        return [year, month, day].join('-');
+    });
 
-        return `${date.getFullYear()}-${month}-${day}`;
+    eleventyConfig.addFilter("sentenceDate", (dateString) => {
+        return new Date(dateString).toLocaleString("en-US", {
+            year: "numeric",
+            month: "short",
+            day: "numeric"
+        });
     });
 
     return {

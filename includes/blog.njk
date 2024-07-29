@@ -1,1 +1,42 @@
-{{ content | safe }}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles/colours.css">
+    <style>
+        #blog_main {
+            width: 35%;
+            margin: auto;
+        }
+
+        p, h1 {
+            color: white;
+        }
+
+        h2, h3, h4, h5, h6 {
+            color: #5e689f;
+        }
+
+        hr {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="blog_main">
+        <h3>AYVACS <a style="color:white;" href="../../">home</a></h3>
+        <p style="color:gray;">{{ date | sentenceDate }}</p>
+        <h1>{{ title }}</h1>
+        <hr>
+        {{ content | safe }}
+        <hr>
+        <p id="copyright" style="color:gray;">&copy;</p>
+        <script>
+            document.getElementById("copyright").textContent += ` ${new Date().getFullYear()} ayvacs. all rights reserved.`
+        </script>
+    </div>
+</body>
+
+</html>

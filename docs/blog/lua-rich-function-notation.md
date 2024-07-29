@@ -6,8 +6,6 @@ tags:
     - post
 ---
 
-# {{ title }}
-
 ```lua
 local myButton = new "TextButton" {
     ["Size"] = UDim2.new(0, 250, 0, 100),

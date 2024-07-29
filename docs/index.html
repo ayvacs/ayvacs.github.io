@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/colours.css">
 </head>
 
 
@@ -13,7 +14,7 @@
         <table id="posts_list">
             {% for post in collections.post %}
             <tr>
-                <td><a class="post_title" href="{{ post.url }}">{{ post.data.title }}</a></td>
+                <td><a class="post_title" target="_blank" href="{{ post.url }}">{{ post.data.title }}</a></td>
                 <td><p class="post_date">{{ post.page.date | readableDate }}</p></td>
             </tr>
             {% endfor %}
