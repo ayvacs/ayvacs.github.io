@@ -48,7 +48,7 @@ end
 
 We can see the definition of the initial function that takes in a `ClassName`, which returns a second function with the properties table as a parameter.
 
-This was a technique I made use of in my [Proton UI library](https://github.com/ayvacs/Proton) to allow for easily human-readable generation of UI instances in the Roblox platform. I made use of this technique once more, with the "onEvent" expression...
+This was a technique I made use of in my [Proton UI library](https://github.com/ayvacs/Proton) to allow for easily human-readable generation of UI instances in the Roblox platform. I made use of this technique once more, with the `onEvent` expression...
 
 ```lua
 local btn = new "TextButton" {

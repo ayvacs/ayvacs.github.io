@@ -8,14 +8,27 @@
 
 <body>
     <div id="blog_main">
-        <h3>AYVACS <a style="color:white;" href="../../">home</a></h3>
-        <p style="color:gray;">{{ date | sentenceDate }}</p>
+        <h3 id="header">AYVACS <a href="../../">home</a></h3>
+        <p id="date">{{ date | sentenceDate }}</p>
         <h1>{{ title }}</h1>
+
         <hr>
-        {{ content | safe }}
+
+        <div id="blog-content">{{ content | safe }}</div>
+
         <hr>
-        <p id="copyright" style="color:gray;">&copy; {{ date | year }} ayvacs. all rights reserved.</p>
+
+        <p id="copyright">&copy; {{ date | year }} ayvacs. all rights reserved. <a id="view-source"></a></p>
     </div>
+
+    <!-- Add view edit history btn -->
+    <script>
+        const pageurl = "{{ page.url }}";
+        const btn = document.getElementById("view-source");
+
+        btn.href = `https://github.com/ayvacs/ayvacs.github.io/commits/main/docs${ pageurl.substring(0, pageurl.length - 1) }.md`;
+        btn.textContent = "view edit history";
+    </script>
 
     <!-- Add hightlight.js syntax highlighting for codeblocks -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
@@ -23,12 +36,8 @@
     <script>hljs.highlightAll();</script>
     <style>
         /* hljs override styles */
-        .hljs {
-            background: none;
-        }
-        pre code.hljs {
-            padding: 0;
-        }
+                .hljs { background: none; }
+        pre code.hljs { padding: 0; }
     </style>
 </body>
 
