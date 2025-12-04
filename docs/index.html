@@ -29,7 +29,7 @@
         <table class="posts_list">
             {% for paper in collections.paper %}
             <tr>
-                <td><a class="post_title" href="/static/{{ paper.data.src }}">{{ paper.data.title }}</a></td>
+                <td><a class="post_title" href="{{ paper.url }}">{{ paper.data.title }}</a></td>
                 <td><p class="post_date">{{ paper.data.display_date }}</p></td>
             </tr>
             {% endfor %}
