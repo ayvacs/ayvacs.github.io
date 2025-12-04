@@ -82,7 +82,7 @@ body {
     color: #5e689f;
 }
 
-#posts_list {
+.posts_list {
     width: 100%;
     padding-left: 24px;
     padding-right: 24px;
