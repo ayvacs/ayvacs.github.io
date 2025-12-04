@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="/styles/colours.css">
     <link rel="stylesheet" href="/styles/blogpost.css">
+    <base target="_blank">
 </head>
 
 <body>
@@ -51,7 +52,7 @@ end
     end
 }
 </code></pre>
-<p>In reality, &quot;onEvent&quot; is simply a <em>function</em> that appends an asterisk to the string parameter. So, <code>onEvent &quot;foo&quot;</code> is equal to <code>*foo</code>. This lets the Proton compiler know that we want to attach the function <code>*foo</code> to the event <code>foo</code>. It's super readable easy to understand, and it's all written in vanilla Lua!</p>
+<p>In reality, <code>onEvent</code> is simply a <em>function</em> that appends an asterisk to the string parameter. So, <code>onEvent &quot;foo&quot;</code> is equal to <code>*foo</code>. This lets the Proton compiler know that we want to attach the function <code>*foo</code> to the event <code>foo</code>. It's super readable easy to understand, and it's all written in vanilla Lua!</p>
 <p>You can view the full source code of the <code>new</code> function <a href="https://github.com/ayvacs/Proton/blob/main/src/Proton/modules/new.luau">here</a>!</p>
 </div>
 
