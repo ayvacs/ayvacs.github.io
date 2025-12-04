@@ -2,6 +2,11 @@
 
 
 module.exports = function (eleventyConfig) {
+    eleventyConfig.addCollection("post", function(collectionApi) {
+        return collectionApi.getFilteredByTag("post")
+            .sort((a, b) => b.date - a.date); // newest first
+    });
+
     eleventyConfig.addFilter("readableDate", (dateString) => {
         var d = new Date(dateString),
             month = "" + (d.getMonth() + 1),

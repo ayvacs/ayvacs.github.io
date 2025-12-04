@@ -58,6 +58,6 @@ local btn = new "TextButton" {
 }
 ```
 
-In reality, "onEvent" is simply a *function* that appends an asterisk to the string parameter. So, `onEvent "foo"` is equal to `*foo`. This lets the Proton compiler know that we want to attach the function `*foo` to the event `foo`. It's super readable easy to understand, and it's all written in vanilla Lua!
+In reality, `onEvent` is simply a *function* that appends an asterisk to the string parameter. So, `onEvent "foo"` is equal to `*foo`. This lets the Proton compiler know that we want to attach the function `*foo` to the event `foo`. It's super readable easy to understand, and it's all written in vanilla Lua!
 
 You can view the full source code of the `new` function [here](https://github.com/ayvacs/Proton/blob/main/src/Proton/modules/new.luau)!

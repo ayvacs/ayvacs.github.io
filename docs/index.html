@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/colours.css">
+    <base target="_blank">
 </head>
 
 
@@ -12,10 +13,10 @@
         <b>AYVACS</b>
         <p>software developer, for hire</p>
         <table id="posts_list">
-            {% for post in collections.post | reverse %}
+            {% for post in collections.post %}
             <tr>
-                <td><a class="post_title" target="_blank" href="{{ post.url }}">{{ post.data.title }}</a></td>
-                <td><p class="post_date">{{ post.page.date | readableDate }}</p></td>
+                <td><a class="post_title" href="{{ post.url }}">{{ post.data.title }}</a></td>
+                <td><p class="post_date">{{ post.date | readableDate }}</p></td>
             </tr>
             {% endfor %}
         </table>
@@ -35,7 +36,7 @@
         </div><!--
      --><div id="nvim_btm_section2">
             <span id="nvim_btm_item4"><a href="https://github.com/ayvacs">github</a></span><!--
-         --><span id="nvim_btm_item5"><a href="#contact">contact</a></span>
+         --><span id="nvim_btm_item5"><a href="#contact" target="_self">contact</a></span>
         </div>
     </footer>
 </body>

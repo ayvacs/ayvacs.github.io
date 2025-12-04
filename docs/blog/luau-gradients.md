@@ -1,25 +1,30 @@
 ---
 layout: blog.njk
-title: gradients in tables, Luau's superpower
+title: tables are luau's superpower
 date: 2025-12-04
 tags:
     - post
 ---
 
-
-
 ```lua
-local gradient = gradient.new(Color3.new(1, 0, 0), Color3.new(0, 0, 1), 10)
+local red = Color3.new(1, 0, 0)
+local blue = Color3.new(0, 0, 1)
+
+local gradient = gradient.new(red, blue, 10)
 
 print(gradient:at(1))     -- First step (pure red)
 print(gradient:lerp(1/2)) -- Midpoint between red and blue
 ```
 
-The above code creates a smooth 10-step colour gradient between two `Color3` values. What's interesting isn't *what* this code does, but rather how cleanly the API is designed and how it takes advantage of Luau's strengths as an engine.
+The above code makes use of a library I wrote to create a smooth 10-step colour gradient between two `Color3` values. What's interesting isn't *what* this code does, but rather:
+
+1. how cleanly the API is designed;
+2. how it takes advantage of Luau's strengths as an engine; and
+3. how it demonstrates that **tables are very clearly Luau's superpower**.
 
 So let's take a look at how my code works under the hood.
 
-At the core of the module is a small helper lerp function:
+At the core of the library is a small helper lerp function:
 
 ```lua
 local function lerp(t, r1, g1, b1, r2, g2, b2)
@@ -49,12 +54,13 @@ local function calculateSteps(from: Color3, to: Color3, steps: number)
 end
 ```
 
-This is essentially the "pre-baked" form of the gradient, an array of colours ready to be fetched, animated, iterated over, or applied to UI elements or 3D objects.
+This is essentially the "pre-baked" form of the gradient: an array of colours ready to be fetched, animated, iterated over, or applied to UI elements or 3D objects.
 
-Where things really get interesting though is in the constructor.
+Where things really get interesting though is in the constructor:
 
 ```lua
 gradient.new = function(from: Color3, to: Color3, steps: number)
+
     -- ...
 
     local steps = calculateSteps(from, to, steps)
@@ -84,9 +90,9 @@ gradient.new = function(from: Color3, to: Color3, steps: number)
 end
 ```
 
-This isn't a traditional "class", just a table containing functions, and this is one of the great things about Luau: you can build extremely lightweight, ergonomic APIs that run exactly like classes but are, at their core, literally just tables with methods attached.
+This isn't a traditional "class", just a table containing functions, and this is one of the great things about Luau: you can build extremely lightweight, ergonomic APIs that run exactly like classes but are, at their core, just tables!
 
-This gradient object offers everything classes could, like:
+This table (which I refer to as a **GradientObject**) offers everything classes could, like:
 
 ```lua
 local colour = gradient:at(3)
@@ -98,7 +104,7 @@ Readable and intuitive: give me the colour at step 3.
 local smooth = gradient:lerp(1/3)
 ```
 
-Instead of being limited to discrete steps, you can request colours at any point between the start and end colours. This is also readable and intuitive: give me the colour a third of the way through the gradient. Perfect for animations and dynamic UI transitions.
+Instead of being limited to discrete steps, you can request colours at any variable point in the gradient. This is also readable and intuitive: give me the colour a third of the way through the gradient. Perfect for animations and dynamic UI transitions.
 
 ```lua
 for colour in gradient:iter() do
@@ -108,6 +114,6 @@ end
 
 Sometimes all you need is a lightweight iterator. No `ipairs` or indexing, just a clean and sequential walk through the gradient.
 
-This stype of API (small helper functions, wrapped in neat readable interfaces) are what I believe Luau's superpower is. Just like expressive function-call notations from my previous blog post, __a well-designed object can make your code both clear and pleasant to work with__. Everything here is written in plain Luau with no magic involved. Just tables!
+This stype of API (small helper functions, wrapped in neat readable interfaces) are what I believe Luau's superpower is. Just like expressive function-call notations from my previous blog post, **a well-designed object can make your code both clear and pleasant to work with**. Everything here is written in plain Luau with no magic involved. Just tables!
 
 If you're interested, the full source code for my gradient library is available [on GitHub](https://github.com/ayvacs/gradient).
