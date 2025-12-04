@@ -92,19 +92,21 @@ end
 
 This isn't a traditional "class", just a table containing functions, and this is one of the great things about Luau: you can build extremely lightweight, ergonomic APIs that run exactly like classes but are, at their core, just tables!
 
-This table (which I refer to as a **GradientObject**) offers everything classes could, like:
+This table (which I refer to as a **GradientObject**) offers everything classes could, like basic methods:
 
 ```lua
 local colour = gradient:at(3)
 ```
 
-Readable and intuitive: give me the colour at step 3.
+This is readable and intuitive: give me the colour at step 3.
 
 ```lua
 local smooth = gradient:lerp(1/3)
 ```
 
 Instead of being limited to discrete steps, you can request colours at any variable point in the gradient. This is also readable and intuitive: give me the colour a third of the way through the gradient. Perfect for animations and dynamic UI transitions.
+
+We can also do some more fancy stuff, like iterators:
 
 ```lua
 for colour in gradient:iter() do
