@@ -12,11 +12,25 @@
     <div id="nvim_main">
         <b>AYVACS</b>
         <p>software developer, for hire</p>
-        <table id="posts_list">
+
+        <br>
+        <b>blog</b>
+        <table class="posts_list">
             {% for post in collections.post %}
             <tr>
                 <td><a class="post_title" href="{{ post.url }}">{{ post.data.title }}</a></td>
                 <td><p class="post_date">{{ post.date | readableDate }}</p></td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <br>
+        <b>research papers</b>
+        <table class="posts_list">
+            {% for paper in collections.paper %}
+            <tr>
+                <td><a class="post_title" href="/static/{{ paper.data.src }}">{{ paper.data.title }}</a></td>
+                <td><p class="post_date">{{ paper.data.display_date }}</p></td>
             </tr>
             {% endfor %}
         </table>
