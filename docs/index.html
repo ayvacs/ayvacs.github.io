@@ -12,7 +12,7 @@
         <b>AYVACS</b>
         <p>software developer, for hire</p>
         <table id="posts_list">
-            {% for post in collections.post %}
+            {% for post in collections.post | reverse %}
             <tr>
                 <td><a class="post_title" target="_blank" href="{{ post.url }}">{{ post.data.title }}</a></td>
                 <td><p class="post_date">{{ post.page.date | readableDate }}</p></td>
